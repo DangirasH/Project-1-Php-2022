@@ -1,7 +1,6 @@
 nav {
   position: fixed;
   width: 100%;
-  transition: background-image 1s ease-in-out;
 }
 
 nav ul {
@@ -22,6 +21,5 @@ nav ul li a {
 
 .transform-scroll-nav {
   width: 100%;
-  overflow: auto;
   background-image: url(../img/nav_back.jpg);
 }
