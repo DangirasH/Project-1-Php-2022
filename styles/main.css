@@ -14,6 +14,16 @@ body {
   margin: 0;
 }
 
+.header-divider {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  background-image: url("../img/ui_divider.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @font-face {
   font-family: "Burning Wrath";
   src: url("../fonts/BurningWrath.woff2") format("woff2"),
