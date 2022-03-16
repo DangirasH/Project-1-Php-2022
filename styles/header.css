@@ -23,13 +23,6 @@ header h2 {
   text-align: center;
 }
 
-.header-infos-skills {
-  display: flex;
-  justify-content: center;
-  gap: 10rem;
-  color: white;
-}
-
 .header-infos-skills ul {
   margin-bottom: 10rem;
 }

@@ -26,6 +26,7 @@
 
 body {
   margin: 0;
+  background-color: var(--dark);
 }
 
 .sidebar-content-container {
@@ -37,15 +38,20 @@ body {
 main {
   display: table-cell;
   width: 82%;
-  background-image: url("../img/bg_masthead.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .skills {
-  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 65px;
   height: 100vh;
+}
+
+.skills > div {
+  width: 100%;
+  color: var(--light);
 }
 
 @font-face {
