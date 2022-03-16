@@ -1,5 +1,7 @@
 .sidebar {
-    background-image: url(../img/Background.jpg);
+
+  background-image: url("../img/sidebar_back.jpg");
+
   padding-top: 7rem;
   padding-bottom: 50rem;
   width: 20%;
@@ -11,7 +13,6 @@
   left: 0;
   top: 0;
   height: 100%;
-  overflow: auto;
 }
 
 .sidebar .profile_image {
@@ -40,7 +41,6 @@
   line-height: 3rem;
   text-decoration: none;
   padding-left: 2.5rem;
-  box-sizing: border-box;
 }
 
 .sidebar a {
@@ -50,5 +50,4 @@
   line-height: 60px;
   text-decoration: none;
   padding-left: 40px;
-  box-sizing: border-box;
 }
