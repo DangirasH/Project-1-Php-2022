@@ -1,10 +1,9 @@
 .sidebar {
   display: table-cell;
   background-image: url("../img/sidebar_back.jpg");
-
   padding-top: 7rem;
   padding-bottom: 50rem;
-  width: 15%;
+  width: 18%;
   vertical-align: top;
   position: fixed;
 }
