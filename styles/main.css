@@ -23,12 +23,15 @@ body {
 main {
   display: table-cell;
   width: 82%;
+  background-image: url("../img/bg_main.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .skills {
   margin-top: 75px;
   height: 100rem;
-  background-image: url("../img/bg_skills.jpg");
 }
 
 @font-face {
