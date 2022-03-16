@@ -40,12 +40,28 @@ main {
   width: 82%;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  text-align: center;
+  background-image: url("../img/bg_home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home h1 {
+  color: var(--light);
+  font-family: var(--title-font);
+  font-size: calc(var(--title-size) * 1.2);
+}
+
 .skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 65px;
   height: 100vh;
 }
 
