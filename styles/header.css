@@ -16,13 +16,6 @@ header h1 {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.center-header-text {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100%;
-}
-
 header h2 {
   vertical-align: center;
   color: white;
