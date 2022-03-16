@@ -1,21 +1,13 @@
 .sidebar {
   display: table-cell;
   background-image: url("../img/sidebar_back.jpg");
+
   padding-top: 7rem;
   padding-bottom: 50rem;
   width: 15%;
   vertical-align: top;
   position: fixed;
 }
-
-/*
-.sidebar .profile_image {
-  width: 15rem;
-  height: 15rem;
-  border-radius: 100%;
-  margin-bottom: 1rem;
-}
-*/
 
 .photoId {
   background-image: url("../img/illidanportrait.png");
@@ -26,14 +18,16 @@
   height: 20rem;
 }
 .sidebar h4 {
-  color: #ccc;
+  color: rgb(189, 245, 178);
   margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: "Burning Wrath";
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .sidebar a {
-  color: #fff;
+  color: #aac800;
   display: block;
   width: 100%;
   line-height: 3rem;
@@ -42,7 +36,7 @@
 }
 
 .sidebar a {
-  color: #fff;
+  color: #aac800;
   display: block;
   width: 100%;
   line-height: 60px;
