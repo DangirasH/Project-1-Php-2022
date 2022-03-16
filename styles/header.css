@@ -1,8 +1,7 @@
- header {
+header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   background-image: url(../img/top_back_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;

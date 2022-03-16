@@ -1,27 +1,29 @@
 .sidebar {
+  display: table-cell;
   background-image: url("../img/sidebar_back.jpg");
   padding-top: 7rem;
   padding-bottom: 50rem;
-  width: 20%;
-  height: 100%;
-}
-
-.transform-sidebar {
+  width: 15%;
+  vertical-align: top;
   position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
 }
 
+/*
 .sidebar .profile_image {
   width: 15rem;
   height: 15rem;
   border-radius: 100%;
   margin-bottom: 1rem;
 }
+*/
+
 .photoId {
-  display: flex;
-  justify-content: center;
+  background-image: url("../img/illidanportrait.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 20rem;
 }
 .sidebar h4 {
   color: #ccc;
