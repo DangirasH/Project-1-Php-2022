@@ -1,0 +1,52 @@
+.sidebar {
+  background: #2f323a;
+  padding-top: 7rem;
+  padding-bottom: 50rem;
+  width: 20%;
+  height: 100%;
+}
+
+.transform-sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar .profile_image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+.photoId {
+  display: flex;
+  justify-content: center;
+}
+.sidebar h4 {
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 3rem;
+  text-decoration: none;
+  padding-left: 2.5rem;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
