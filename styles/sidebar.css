@@ -25,10 +25,12 @@
   justify-content: center;
 }
 .sidebar h4 {
-  color: #ccc;
+  color: rgb(189, 245, 178);;
   margin-top: 0;
   margin-bottom: 2rem;
   text-align: center;
+  font-family: "Burning Wrath";
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 .sidebar a {
