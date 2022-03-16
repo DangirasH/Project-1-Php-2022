@@ -4,3 +4,33 @@ textarea{
     width: 400px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    input,
+    textarea {
+    margin-block-end: 20px;
+    border: none;
+    border-radius: 3px;
+    }    
+
+    input {
+        height: 25px;
+        }
+        label {
+            margin-block-end: 10px;
+            text-align: left;
+            padding-inline-start: 5px;
+            font-weight: bold;
+            }
+            button {
+                border: none;
+                width: 100px;
+                height: 30px;
+                border-radius: 3px;
+                box-shadow: 3px 3px 3px grey;
+                }
+                
