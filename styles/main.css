@@ -1,0 +1,22 @@
+:root {
+  /* Declare variables here */
+  --title-main-font: "Burning Wrath";
+  --primary-text-color: #aac800;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Burning Wrath";
+  src: url("../font/BurningWrath.woff2") format("woff2"),
+    url("../font/BurningWrath.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../img/top_back_desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header h1 {
+  width: 20%;
+  text-align: center;
+  font-family: "Burning Wrath";
+  color: rgb(189, 245, 178);
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.center-header-text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+header h2 {
+  vertical-align: center;
+  color: white;
+  text-align: center;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(189, 245, 178), 0 0 20px rgb(189, 245, 178),
+      0 0 25px #aac800, 0 0 30px #aac800, 0 0 33px #aac800, 0 0 35px #aac800,
+      0 0 40px #aac800;
+  }
+  to {
+    text-shadow: 0 0 20px rgb(189, 245, 178), 0 0 30px #aac800, 0 0 40px #aac800,
+      0 0 45px #aac800, 0 0 50px #aac800, 0 0 55px #aac800, 0 0 60px #aac800;
+  }
+}
