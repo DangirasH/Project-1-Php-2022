@@ -1,7 +1,7 @@
 const navigation = document.querySelector("nav");
 const sidebar = document.querySelector(".sidebar");
 
-let screenVH = vhToPixels(93);
+let screenVH = vhToPixels(80);
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > screenVH) {
