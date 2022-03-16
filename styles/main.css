@@ -2,6 +2,7 @@
   /* Declare variables here */
   --text-size: 1.2rem;
   --primary: #6dc03c;
+  --primary-opacity: #6cc03cab;
   --primary-light: #a2ff6d;
   --primary-dark: #282c13;
   --intermediate: #9e3e11;
@@ -37,7 +38,7 @@ body {
 main {
   display: table-cell;
   width: 82%;
-  background-image: url("../img/bg_masthead.jpg");
+  background-image: url("../img/bg_main.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
