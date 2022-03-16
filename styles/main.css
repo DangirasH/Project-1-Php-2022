@@ -2,6 +2,8 @@
   /* Declare variables here */
   --title-main-font: "Burning Wrath";
   --primary-text-color: #aac800;
+  --sub-title-size: 1.8rem;
+  --text-size: 1.2rem;
 }
 
 * {

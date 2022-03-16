@@ -1,6 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   background-image: url(../img/top_back_desktop.jpg);
   background-repeat: no-repeat;
@@ -16,17 +17,27 @@ header h1 {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.center-header-text {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 100%;
-}
-
 header h2 {
   vertical-align: center;
+  font-size: var(--sub-title-size);
   color: white;
   text-align: center;
+}
+
+.header-infos-skills {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  color: white;
+}
+
+.header-infos-skills ul {
+  margin-bottom: 10rem;
+}
+
+.header-infos-skills ul li {
+  font-size: var(--text-size);
+  list-style: none;
 }
 
 @keyframes glow {
