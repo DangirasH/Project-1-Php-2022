@@ -1,7 +1,7 @@
 .sidebar{
     background: #2F323A;
     margin-top: 70px;
-    padding-top: 300px;
+    padding-top: 100px;
     position: fixed;
     left: 0;
     width: 250px;
@@ -9,13 +9,15 @@
 }
 
 .sidebar .profile_image{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
     margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .sidebar h4{
+    margin-left: 60px;
     color: #ccc;
     margin-top: 0;
     margin-bottom: 20px;
