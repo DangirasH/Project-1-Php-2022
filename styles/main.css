@@ -14,8 +14,8 @@ body {
 
 @font-face {
   font-family: "Burning Wrath";
-  src: url("../font/BurningWrath.woff2") format("woff2"),
-    url("../font/BurningWrath.woff") format("woff");
+  src: url("../fonts/BurningWrath.woff2") format("woff2"),
+    url("../fonts/BurningWrath.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
