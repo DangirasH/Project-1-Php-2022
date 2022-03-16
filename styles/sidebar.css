@@ -1,7 +1,9 @@
 .sidebar {
   display: table-cell;
   background-image: url("../img/sidebar_back.jpg");
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
   padding-top: 7rem;
   padding-bottom: 50rem;
   width: 15%;
@@ -12,10 +14,12 @@
 .photoId {
   background-image: url("../img/illidanportrait.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: auto;
   height: 20rem;
+  margin-inline: 1.5rem;
+  margin-bottom: 1rem;
 }
 .sidebar h4 {
   color: rgb(189, 245, 178);

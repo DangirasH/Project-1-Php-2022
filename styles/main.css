@@ -26,6 +26,12 @@ main {
   vertical-align: top;
 }
 
+.skills {
+  margin-top: 75px;
+  height: 100rem;
+  background-image: url("../img/bg_skills.jpg");
+}
+
 @font-face {
   font-family: "Burning Wrath";
   src: url("../fonts/BurningWrath.woff2") format("woff2"),
