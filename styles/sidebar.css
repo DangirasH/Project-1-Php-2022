@@ -1,16 +1,13 @@
 .sidebar {
   display: table-cell;
-  background-image: url("../img/bg_sidebar.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  padding-top: 7rem;
-  padding-bottom: 50rem;
+  background-color: black;
+  height: 100%;
   width: 18%;
   vertical-align: top;
   position: fixed;
 }
 
+/*
 .photoId {
   background-image: url("../img/illidanportrait.png");
   background-repeat: no-repeat;
@@ -21,6 +18,16 @@
   margin-inline: 1.5rem;
   margin-bottom: 1rem;
 }
+*/
+
+.sidebar > div {
+  height: 20rem;
+  background-image: url("../img/bg_sidebar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
 .sidebar h4 {
   color: rgb(189, 245, 178);
   margin-top: 0;
