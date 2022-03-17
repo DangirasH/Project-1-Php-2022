@@ -79,6 +79,10 @@ main {
   color: var(--light);
 }
 
+p {
+  color: var(--intermediate);
+}
+
 @font-face {
   font-family: "Burning Wrath";
   src: url("../fonts/BurningWrath.woff2") format("woff2"),
@@ -86,4 +90,75 @@ main {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.article {
+  display: flex;
+}
+
+.article div {
+  padding: 0.5rem;
+  margin: 1rem;
+  background-image: url(../img/texturepierre.jpg);
+}
+
+.Illidan-tacticien {
+  height: 70%;
+  width: 100%;
+}
+
+.Illidan-determine {
+  height: 70%;
+  width: 100%;
+}
+
+.Illidan-charismatique {
+  height: 70%;
+  width: 100%;
+}
+
+.article div h2 {
+  color: var(--primary);
+  text-align: center;
+}
+
+.experiences h1 {
+  display: flex;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.experiences {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.experiences div {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.Illidan-arthas {
+  width: 100%;
+  height: 100%;
+}
+
+.Illidan-legion {
+  width: 100%;
+  height: 100;
+}
+
+.experience {
+  padding: 0.5rem;
+  margin: 1rem;
+  background-image: url(../img/texturepierre.jpg);
 }
