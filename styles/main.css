@@ -24,9 +24,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: var(--dark);
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -61,48 +66,61 @@ main {
   font-size: calc(var(--title-size) * 1.2);
 }
 
-p {
-  color: var(--intermediate);
+.qualites {
+  height: 50rem;
 }
 
-.formation {
+.qualites h1 {
+  margin-top: 5rem;
+  margin-bottom: var(--spacing4);
   text-align: center;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
   color: var(--primary);
 }
 
-.article {
+.quality-wrapper {
   display: flex;
+  justify-content: space-around;
 }
 
-.article div {
-  padding: 0.5rem;
-  margin: 1rem;
-  background-image: url(../img/texturepierre.jpg);
-}
-
-.Illidan-tacticien {
-  height: 70%;
-  width: 100%;
-}
-
-.Illidan-determine {
-  height: 70%;
-  width: 100%;
-}
-
-.Illidan-charismatique {
-  height: 70%;
-  width: 100%;
-}
-
-.article div h2 {
+.quality-wrapper div h2 {
+  margin-top: 5rem;
   color: var(--primary);
   text-align: center;
+}
+
+.qualites p {
+  padding-inline: var(--spacing3);
+  color: var(--light);
+  font-size: var(--text-size);
+}
+
+.image-qualite1 {
+  height: 20rem;
+  width: 100%;
+  background-image: url("../img/Illidan-quality1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-qualite2 {
+  height: 20rem;
+  background-image: url("../img/Illidan-quality2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.image-qualite3 {
+  height: 20rem;
+  background-image: url("../img/Illidan-quality3.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.quality-wrapper > div {
+  width: 30%;
+  background-image: url("../img/bg_content.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .experiences h1 {
@@ -134,10 +152,8 @@ h1 {
   height: 100;
 }
 
-.experience {
-  padding: 0.5rem;
-  margin: 1rem;
-  background-image: url(../img/texturepierre.jpg);
+.formation {
+  text-align: center;
 }
 
 .image-formation {
