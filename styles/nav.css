@@ -13,7 +13,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-inline: 1.5rem;
+  margin-inline: var(--spacing3);
   font-size: 1.5rem;
   list-style: none;
 }
