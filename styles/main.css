@@ -69,15 +69,6 @@ p {
   text-align: center;
 }
 
-@font-face {
-  font-family: "Burning Wrath";
-  src: url("../fonts/BurningWrath.woff2") format("woff2"),
-    url("../fonts/BurningWrath.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 h1 {
   display: flex;
   justify-content: center;
@@ -147,4 +138,23 @@ h1 {
   padding: 0.5rem;
   margin: 1rem;
   background-image: url(../img/texturepierre.jpg);
+}
+
+.image-formation {
+  background-image: url("../img/formation_temple_noir.png");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  width: 60%;
+  margin-inline: auto auto;
+  margin-top: var(--spacing5);
+}
+
+@font-face {
+  font-family: "Burning Wrath";
+  src: url("../fonts/BurningWrath.woff2") format("woff2"),
+    url("../fonts/BurningWrath.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
