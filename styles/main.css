@@ -28,12 +28,6 @@ body {
   margin: 0;
   background-color: var(--dark);
 }
-/*
-.sidebar-content-container {
-  display: table;
-  width: 100%;
-  height: 100%;
-}*/
 
 .wrapper {
   display: flex;
@@ -54,7 +48,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50rem;
+  height: 100vh;
   text-align: center;
   background-image: url("../img/bg_home.jpg");
   background-size: cover;
