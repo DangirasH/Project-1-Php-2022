@@ -7,19 +7,6 @@
   position: fixed;
 }
 
-/*
-.photoId {
-  background-image: url("../img/illidanportrait.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: auto;
-  height: 20rem;
-  margin-inline: 1.5rem;
-  margin-bottom: 1rem;
-}
-*/
-
 .sidebar > div {
   height: 20rem;
   background-image: url("../img/bg_sidebar.png");
