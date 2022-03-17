@@ -1,6 +1,5 @@
 :root {
   /* Declare variables here */
-  --text-size: 1.2rem;
   --primary: #6dc03c;
   --primary-opacity: #6cc03cab;
   --primary-light: #a2ff6d;
@@ -27,6 +26,7 @@
 
 body {
   margin: 0;
+  background-color: var(--dark);
 }
 
 .sidebar-content-container {
@@ -38,15 +38,45 @@ body {
 main {
   display: table-cell;
   width: 82%;
-  background-image: url("../img/bg_main.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+
+
+}
+
+.divider {
+  height: 20px;
+  background-image: url("../img/ui_divider.webp");
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  text-align: center;
+  background-image: url("../img/bg_home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home h1 {
+  color: var(--light);
+  font-family: var(--title-font);
+  font-size: calc(var(--title-size) * 1.2);
 }
 
 .skills {
-  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
+}
+
+.skills > div {
+  width: 100%;
+  color: var(--light);
 }
 
 @font-face {

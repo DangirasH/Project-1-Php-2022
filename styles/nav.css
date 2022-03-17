@@ -1,9 +1,10 @@
 nav {
   position: fixed;
   width: 100%;
-  height: 75px;
-  width: 100%;
-  background-image: url("../img/bg_nav.jpg");
+  height: 65px;
+  background-image: url("../img/nav_back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 nav ul {
@@ -12,7 +13,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-inline: 1.5rem;
+  margin-inline: var(--spacing3);
   font-size: 1.5rem;
   list-style: none;
 }
