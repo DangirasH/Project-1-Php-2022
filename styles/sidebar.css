@@ -1,0 +1,43 @@
+.sidebar {
+  display: table-cell;
+  background-color: black;
+  height: 100%;
+  width: 18%;
+  vertical-align: top;
+  position: fixed;
+}
+
+.sidebar > div {
+  height: 20rem;
+  background-image: url("../img/bg_sidebar.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.sidebar h4 {
+  color: rgb(189, 245, 178);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Burning Wrath";
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.sidebar a {
+  color: #aac800;
+  display: block;
+  width: 100%;
+  line-height: 3rem;
+  text-decoration: none;
+  padding-left: 2.5rem;
+}
+
+.sidebar a {
+  color: #aac800;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+}

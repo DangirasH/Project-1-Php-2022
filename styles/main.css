@@ -1,8 +1,22 @@
 :root {
   /* Declare variables here */
-  --title-main-font: "Burning Wrath";
-  --primary-text-color: #aac800;
-  --secondary-text-color: #1cd604;
+  --primary: #6dc03c;
+  --primary-light: #a2ff6d;
+  --primary-dark: #282c13;
+  --intermediate: #9e3e11;
+  --light: #f1f3e7;
+  --dark: #141414;
+
+  --title-font: "Burning Wrath";
+  --text-font: "Open Sans", sans-serif;
+  --text-size: 1.3rem;
+  --title-size: calc(2 * var(--text-size));
+
+  --spacing: 0.5rem;
+  --spacing2: calc(2 * var(--spacing));
+  --spacing3: calc(3 * var(--spacing));
+  --spacing4: calc(4 * var(--spacing));
+  --spacing5: calc(5 * var(--spacing));
 }
 
 * {
@@ -11,16 +25,65 @@
 
 body {
   margin: 0;
+  background-color: var(--dark);
+}
+
+.sidebar-content-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: table-cell;
+  width: 82%;
+}
+
+.divider {
+  height: 20px;
+  background-image: url("../img/ui_divider.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50rem;
+  text-align: center;
+  background-image: url("../img/bg_home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home h1 {
+  color: var(--light);
+  font-family: var(--title-font);
+  font-size: calc(var(--title-size) * 1.2);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.skills > div {
+  width: 100%;
+  color: var(--light);
 }
 
 p {
-  color: var(--secondary-text-color);
+  color: var(--intermediate);
 }
 
 @font-face {
   font-family: "Burning Wrath";
-  src: url("../font/BurningWrath.woff2") format("woff2"),
-    url("../font/BurningWrath.woff") format("woff");
+  src: url("../fonts/BurningWrath.woff2") format("woff2"),
+    url("../fonts/BurningWrath.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,7 +92,7 @@ p {
 h1 {
   display: flex;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: var(--primary);
 }
 
 .article {
@@ -58,14 +121,14 @@ h1 {
 }
 
 .article div h2 {
-  color: var(--primary-text-color);
+  color: var(--primary);
   text-align: center;
 }
 
 .experiences h1 {
   display: flex;
   justify-content: center;
-  color: var(--primary-text-color);
+  color: var(--primary);
 }
 
 .experiences {
