@@ -5,6 +5,7 @@
   width: 18%;
   vertical-align: top;
   position: fixed;
+  border-right: solid 1px var(--primary-opacity);
 }
 
 .sidebar > div {
