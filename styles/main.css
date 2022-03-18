@@ -1,5 +1,5 @@
 /*@import url("https://fonts.googleapis.com/css2?family=Trochut:ital,wght@0,400;0,700;1,400&display=swap");*/
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 :root {
   /* Declare variables here */
   --primary: #6dc03c;
@@ -11,7 +11,7 @@
   --dark: #141414;
 
   --title-font: "Burning Wrath";
-  --text-font: "Open Sans", sans-serif;
+  --text-font: "Nunito Sans", sans-serif;
   --text-size: 1.3rem;
   --title-size: calc(2 * var(--text-size));
 
