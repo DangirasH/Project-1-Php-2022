@@ -46,7 +46,11 @@ h4.skills {
 }
 
 .sidebar .icone-contact, .sidebar .icone-skill {
-  width: 23px;
+  width: 20px;
+  margin-inline-end: var(--spacing2);
+}
+.sidebar .icone-skill {
+  width: 25px;
   margin-inline-end: var(--spacing2);
 }
 

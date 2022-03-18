@@ -22,3 +22,7 @@ nav ul li a {
   color: var(--primary-light);
   text-decoration: none;
 }
+
+nav img {
+  height: 35px;
+}
