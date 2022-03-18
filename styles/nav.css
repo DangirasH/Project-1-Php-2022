@@ -26,7 +26,3 @@ nav ul li a {
 nav ul li a:hover {
   animation: glow 1s ease-in-out infinite alternate;
 }
-
-nav img {
-  height: 35px;
-}
