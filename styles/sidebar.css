@@ -11,7 +11,7 @@
 }
 
 .sidebar > div {
-  height: 20rem;
+  height: 15rem;
   background-image: url("../img/bg_sidebar.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,14 +19,23 @@
 }
 
 .sidebar h4 {
-  color: rgb(189, 245, 178);
+  font-size: 1.5rem;
+  color: #aac800;
   margin-block-start: 0;
   margin-block-end: var(--spacing2);
   text-align: center;
   font-family: "Burning Wrath";
-  animation: glow 1s ease-in-out infinite alternate;
+  
 }
-
+.sidebar h5 {
+  font-size: 1.3rem;
+  color: #aac800;
+  margin-block-start: 0;
+  margin-block-end: var(--spacing2);
+  text-align: center;
+  font-family: "Burning Wrath";
+  
+}
 h4.skills {
   margin-block-start: var(--spacing4);
 }
