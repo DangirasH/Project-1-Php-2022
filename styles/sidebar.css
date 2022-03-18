@@ -1,9 +1,10 @@
+
 .sidebar {
   position: sticky;
-  top: 65px;
+  top: 0;
   overflow: auto;
   background-color: black;
-  height: calc(100vh - 65px);
+  height: 100vh;
   width: 18%;
   vertical-align: top;
   border-right: solid 1px var(--primary-opacity);
@@ -19,27 +20,37 @@
 
 .sidebar h4 {
   color: rgb(189, 245, 178);
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-block-start: 0;
+  margin-block-end: var(--spacing2);
   text-align: center;
   font-family: "Burning Wrath";
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-.sidebar a {
+h4.skills {
+  margin-block-start: var(--spacing4);
+}
+
+.sidebar ul li {
   color: #aac800;
-  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
   line-height: 3rem;
   text-decoration: none;
   padding-left: 2.5rem;
+  font-family: "Trochut";
+  font-family: var(--text-font);
+  
 }
 
-.sidebar a {
-  color: #aac800;
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  padding-left: 40px;
+.sidebar .icone-contact, .sidebar .icone-skill {
+  width: 20px;
+  margin-inline-end: var(--spacing2);
 }
+.sidebar .icone-skill {
+  width: 25px;
+  margin-inline-end: var(--spacing2);
+}
+
