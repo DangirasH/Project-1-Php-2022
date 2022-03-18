@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
 :root {
   /* Declare variables here */
   --primary: #6dc03c;
@@ -36,8 +37,11 @@ body {
   line-height: 1.5;
 }
 
-p, a, li, span{
-font-family: var(--text-font);
+p,
+a,
+li,
+span {
+  font-family: var(--text-font);
 }
 
 .wrapper {
@@ -185,4 +189,16 @@ main {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgb(189, 245, 178), 0 0 10px rgb(189, 245, 178),
+      0 0 20px #aac800, 0 0 25px #aac800, 0 0 30px #aac800, 0 0 35px #aac800,
+      0 0 40px #aac800;
+  }
+  to {
+    text-shadow: 0 0 10px rgb(189, 245, 178), 0 0 20px #aac800, 0 0 30px #aac800,
+      0 0 35px #aac800, 0 0 40px #aac800, 0 0 45px #aac800, 0 0 50px #aac800;
+  }
 }
