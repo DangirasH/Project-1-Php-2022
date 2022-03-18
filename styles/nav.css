@@ -14,13 +14,17 @@ nav ul {
 
 nav ul li {
   margin-inline: var(--spacing3);
-  font-size: 1.5rem;
+  font-size: var(--text-size);
   list-style: none;
 }
 
 nav ul li a {
   color: var(--primary-light);
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 nav img {
