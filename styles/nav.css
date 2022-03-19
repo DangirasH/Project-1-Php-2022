@@ -1,4 +1,6 @@
 nav {
+  display: flex;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   right: 0;
@@ -13,6 +15,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   gap: 15px;
+  margin-right: var(--spacing3);
 }
 
 nav ul li {
@@ -27,4 +30,21 @@ nav ul li a {
 
 nav ul li a:hover {
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.burger {
+  display: none;
+  fill: var(--primary);
+  margin-block: auto auto;
+  margin-right: var(--spacing3);
+}
+
+@media screen and (max-width: 658px) {
+  nav ul {
+    display: none;
+  }
+
+  .burger {
+    display: initial;
+  }
 }
