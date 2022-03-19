@@ -22,6 +22,7 @@
 .experience {
     display: flex;
     margin-right: 5rem;
+    margin-left: 5rem;
 }
 
 .image-eternite {
@@ -30,7 +31,6 @@
     background-position: center;
     height: 30rem;
     width: 50%;
-    margin-inline: auto auto;
     margin-top: var(--spacing5);
 }
 
@@ -44,7 +44,6 @@
     background-position: center;
     height: 30rem;
     width: 50%;
-    margin-inline: auto auto;
     margin-top: var(--spacing5);
 }
 
