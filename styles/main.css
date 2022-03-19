@@ -79,10 +79,6 @@ main {
   font-size: calc(var(--title-size) * 1.2);
 }
 
-.qualites {
-  height: 50rem;
-}
-
 .qualites h1 {
   margin-top: 5rem;
   margin-bottom: var(--spacing4);
@@ -93,8 +89,11 @@ main {
 }
 
 .quality-wrapper {
-  display: flex;
-  justify-content: space-around;
+  --card-size: 300px;
+  margin-inline: var(--spacing) var(--spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: var(--spacing);
 }
 
 .quality-wrapper div h2 {
@@ -112,7 +111,6 @@ main {
 
 .image-qualite1 {
   height: 20rem;
-  width: 100%;
   background-image: url("../img/Illidan-quality1.jpg");
   background-size: cover;
   background-position: center;
@@ -133,10 +131,10 @@ main {
 }
 
 .quality-wrapper > div {
-  width: 30%;
   background-image: url("../img/black-background-stone.png");
   background-size: cover;
   background-position: center;
+  margin-bottom: var(--spacing5);
 }
 
 .experiences h1 {
