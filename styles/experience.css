@@ -37,3 +37,17 @@
 .eternite {
     align-self: center;
 }
+
+.image-tychondrius {
+    background-image: url("../img/Illidan-tychondrius.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 50%;
+    margin-inline: auto auto;
+    margin-top: var(--spacing5);
+}
+
+.tychondrius {
+    align-self: center;
+}
