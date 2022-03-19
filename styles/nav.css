@@ -12,10 +12,10 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
+  gap: 15px;
 }
 
 nav ul li {
-  margin-inline: var(--spacing3);
   font-size: var(--text-size);
   list-style: none;
 }
