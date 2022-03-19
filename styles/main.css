@@ -15,6 +15,8 @@
   --text-size: 1.3rem;
   --title-size: calc(2 * var(--text-size));
 
+  --sidebar-width: 18%;
+
   --spacing: 0.5rem;
   --spacing2: calc(2 * var(--spacing));
   --spacing3: calc(3 * var(--spacing));
@@ -41,6 +43,7 @@ a,
 li,
 span {
   font-family: var(--text-font);
+  font-size: var(--text-size);
 }
 
 .wrapper {
@@ -48,11 +51,12 @@ span {
 }
 
 main {
-  width: 82%;
+  width: calc(100% - var(--sidebar-width));
 }
 
 .divider {
   height: 20px;
+  width: 100%;
   background-image: url("../img/ui_divider.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -75,21 +79,21 @@ main {
   font-size: calc(var(--title-size) * 1.2);
 }
 
-.qualites {
-  height: 50rem;
-}
-
 .qualites h1 {
   margin-top: 5rem;
   margin-bottom: var(--spacing4);
   font-family: var(--title-font);
+  font-size: var(--title-size);
   text-align: center;
   color: var(--primary);
 }
 
 .quality-wrapper {
-  display: flex;
-  justify-content: space-around;
+  --card-size: 300px;
+  margin-inline: var(--spacing) var(--spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: var(--spacing);
 }
 
 .quality-wrapper div h2 {
@@ -107,7 +111,6 @@ main {
 
 .image-qualite1 {
   height: 20rem;
-  width: 100%;
   background-image: url("../img/Illidan-quality1.jpg");
   background-size: cover;
   background-position: center;
@@ -128,10 +131,10 @@ main {
 }
 
 .quality-wrapper > div {
-  width: 30%;
   background-image: url("../img/black-background-stone.png");
   background-size: cover;
   background-position: center;
+  margin-bottom: var(--spacing5);
 }
 
 .experiences h1 {
@@ -163,12 +166,16 @@ main {
   height: 100;
 }
 
+.formation {
+  height: 55rem;
+}
+
 .formation h1 {
   margin-top: 5rem;
   font-family: var(--title-font);
   text-align: center;
   color: var(--primary);
-  text-align: center;
+  font-size: var(--title-size);
 }
 
 .image-formation {
@@ -179,6 +186,30 @@ main {
   width: 60%;
   margin-inline: auto auto;
   margin-top: var(--spacing5);
+}
+
+.formations {
+  width: 60%;
+  height: 360px;
+  margin-inline: auto auto;
+  background-image: url("../img/texturepierre.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.formation h2 {
+  padding-top: 4rem;
+  margin-top: 0;
+  text-align: center;
+  color: var(--primary);
+  font-family: var(--title-font);
+}
+
+.formation p {
+  padding-inline-start: var(--spacing4);
+  color: var(--light);
+  font-family: var(--text-font);
+  font-size: var(--text-size);
 }
 
 @font-face {

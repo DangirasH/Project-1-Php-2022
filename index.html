@@ -12,13 +12,27 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="#home">Acceuil</a></li>
+        <ul class="items" id="items">
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#qualities">Qualités</a></li>
           <li><a href="#expériences">Expériences</a></li>
           <li><a href="#formations">Formations</a></li>
-          <li><a href="contact.html">Me contacter</a></li>
+          <li><a href="contact.html">Contacter</a></li>
         </ul>
+        <a class="burger" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </a>
       </nav>
       <section class="home" id="home">
         <h1>Vous n'etes pas pret pour mon CV !</h1>
@@ -27,56 +41,58 @@
     <div class="wrapper">
       <aside class="sidebar">
         <div></div>
-
-        <h4>Illidan Stormage</h4>
+        <h2>
+          Illidan <br />
+          Stormage
+        </h2>
         <ul>
           <li>
-            <img src="/img/phone.png" alt="phone" class="icone-contact" /><span
+            <img src="img/phone.png" alt="phone" class="icone-contact" /><span
               >999-545-523</span
             >
           </li>
           <li>
-            <img src="/img/temple.png" alt="home" class="icone-contact" /><span
+            <img src="img/temple.png" alt="home" class="icone-contact" /><span
               >Temple Noir,Outreterre</span
             >
           </li>
           <li>
-            <img src="/img/mail.png" alt="mail" class="icone-contact" /><span
+            <img src="img/mail.png" alt="mail" class="icone-contact" /><span
               >illidan@gmail.com</span
             >
           </li>
         </ul>
 
-        <h4 class="skills">Competences</h4>
+        <h2 class="skills">Competences</h2>
         <ul>
           <li>Glaive</li>
           <li>
-            <img src="/img/glaive.png" alt="glaive" class="icone-skill" /><img
-              src="/img/glaive.png"
+            <img src="img/glaive.png" alt="glaive" class="icone-skill" /><img
+              src="img/glaive.png"
               alt="glaive"
               class="icone-skill"
-            /><img src="/img/glaive.png" alt="glaive" class="icone-skill" />
+            /><img src="img/glaive.png" alt="glaive" class="icone-skill" />
           </li>
           <li>Slide</li>
           <li>
-            <img src="/img/wings.png" alt="wings" class="icone-skill" /><img
-              src="/img/wings.png"
+            <img src="img/wings.png" alt="wings" class="icone-skill" /><img
+              src="img/wings.png"
               alt="wings"
               class="icone-skill"
-            /><img src="/img/wings.png" alt="wings" class="icone-skill" />
+            /><img src="img/wings.png" alt="wings" class="icone-skill" />
           </li>
           <li>Two faces</li>
           <li>
-            <img src="/img/two-face.png" alt="faces" class="icone-skill" />
-            <img src="/img/two-face.png" alt="faces" class="icone-skill" />
+            <img src="img/two-face.png" alt="faces" class="icone-skill" />
+            <img src="img/two-face.png" alt="faces" class="icone-skill" />
           </li>
           <li>Immolation aura</li>
           <li>
-            <img src="/img/flame.png" alt="flame" class="icone-skill" /><img
-              src="/img/flame.png"
+            <img src="img/flame.png" alt="flame" class="icone-skill" /><img
+              src="img/flame.png"
               alt="flame"
               class="icone-skill"
-            /><img src="/img/flame.png" alt="flame" class="icone-skill" />
+            /><img src="img/flame.png" alt="flame" class="icone-skill" />
           </li>
         </ul>
       </aside>
@@ -90,7 +106,7 @@
               <h2>Tacticien</h2>
               <p>
                 De mes nombreuses expériences, j'ai acquis un sens développé de
-                la tactique. De ce fait, je pourrais diriger n'importe quelle
+                la tactique. De ce fait, je pourrai diriger n'importe quelle
                 équipe.
               </p>
             </div>
@@ -118,21 +134,26 @@
         <section class="formation">
           <h1>Formations</h1>
           <div class="image-formation"></div>
-          <!--
-          <div class="formation-detail">
-            <h2>Archidruide</h2>
-            <p>Formateur: Cenarius, Demi-dieu, Gardien du Bosquet</p>
-            <p>Apprentissage de la magie druidique</p>
+          <div class="formations">
+            <div class="formation-detail">
+              <h2>Archidruide</h2>
+              <p>
+                <b>Formateur</b>: Cenarius (demi-dieu, gardien du bosquet).
+                Apprentissage de la magie druidique.
+              </p>
+            </div>
+            <div class="formation-detail">
+              <h2>Demoniaque</h2>
+              <p>
+                <b>Formateur</b>: Guldan (orc, démoniste, nécromancien).
+                Absorbtion des pouvoirs de son crâne.
+              </p>
+            </div>
           </div>
-          <div class="formation-detail">
-            <h2>Pouvoirs démoniaque</h2>
-            <p>
-              Afin de battre Tichondrius, absorbtion des pouvoirs du crâne de
-              Guldan
-            </p>
-          </div>-->
         </section>
+        <div class="divider"></div>
       </main>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
