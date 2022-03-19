@@ -13,7 +13,7 @@
   --title-font: "Burning Wrath";
   --text-font: "Nunito Sans", sans-serif;
   --text-size: 1.3rem;
-  --title-size: calc(2 * var(--text-size));
+  --title-size: clamp(35px, 2.6em, 45px);
 
   --sidebar-width: 18%;
 
@@ -139,10 +139,10 @@ main {
 
 .experiences h1 {
   margin-top: 5rem;
+  font-size: var(--title-size);
   font-family: var(--title-font);
   text-align: center;
   color: var(--primary);
-  text-align: center;
 }
 
 .experiences h2 {
@@ -241,7 +241,6 @@ main {
 
 .formations {
   width: 60%;
-  height: 360px;
   margin-inline: auto auto;
   background-image: url("../img/texturepierre.jpg");
   background-size: cover;
@@ -257,7 +256,7 @@ main {
 }
 
 .formation p {
-  padding-inline-start: var(--spacing4);
+  padding-inline: var(--spacing4);
   color: var(--light);
   font-family: var(--text-font);
   font-size: var(--text-size);

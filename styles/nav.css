@@ -50,6 +50,16 @@ nav ul li a:hover {
   background-image: url("../img/bg_section.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  animation: burger 0.2s ease-in;
+}
+
+@keyframes burger {
+  from {
+    translate: 100% 0;
+  }
+  to {
+    translate: 0 0;
+  }
 }
 
 @media screen and (max-width: 658px) {
