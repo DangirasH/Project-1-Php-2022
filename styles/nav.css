@@ -14,11 +14,10 @@ nav {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  gap: 15px;
-  margin-right: var(--spacing3);
 }
 
 nav ul li {
+  margin-right: var(--spacing2);
   font-size: var(--text-size);
   list-style: none;
 }
@@ -37,6 +36,20 @@ nav ul li a:hover {
   fill: var(--primary);
   margin-block: auto auto;
   margin-right: var(--spacing3);
+}
+
+.items:target {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  position: fixed;
+  margin: 0;
+  top: 65px;
+  right: 0;
+  background-image: url("../img/texturepierre.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 658px) {
