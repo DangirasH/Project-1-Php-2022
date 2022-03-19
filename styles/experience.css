@@ -39,6 +39,10 @@
     width: 45%;
 }
 
+#titi {
+    flex-direction: row-reverse;
+}
+
 .image-tychondrius {
     background-image: url("../img/Illidan-tychondrius.jpg");
     background-size: cover;
@@ -49,6 +53,38 @@
 }
 
 .tychondrius {
+    align-self: center;
+    width: 45%;
+}
+
+.image-arthas {
+    background-image: url("../img/Illidan-arthas");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 50%;
+    margin-top: var(--spacing5);
+}
+
+.arthas {
+    align-self: center;
+    width: 45%;
+}
+
+#illi {
+    flex-direction: row-reverse;
+}
+
+.image-illidari {
+    background-image: url("../img/Illidan-illidari.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 50%;
+    margin-top: var(--spacing5);
+}
+
+.illidari {
     align-self: center;
     width: 45%;
 }
