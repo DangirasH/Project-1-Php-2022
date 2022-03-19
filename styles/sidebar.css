@@ -18,6 +18,14 @@
 }
 
 .sidebar h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-block-start: 0;
+  margin-block-end: var(--spacing2);
+  text-align: center;
+  font-family: "Burning Wrath";
+}
+.sidebar h3 {
   font-size: 1.5rem;
   color: var(--primary);
   margin-block-start: 0;
