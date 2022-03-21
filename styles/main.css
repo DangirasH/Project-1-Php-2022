@@ -63,6 +63,12 @@ main {
   background-repeat: no-repeat;
 }
 
+.title-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -270,16 +276,4 @@ main {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 1px rgb(189, 245, 178), 0 0 2px rgb(189, 245, 178),
-      0 0 3px #aac800, 0 0 4px #aac800, 0 0 5px #aac800, 0 0 6px #aac800,
-      0 0 7px #aac800;
-  }
-  to {
-    text-shadow: 0 0 2px rgb(189, 245, 178), 0 0 3px #aac800, 0 0 4px #aac800,
-      0 0 5x #aac800, 0 0 6px #aac800, 0 0 7px #aac800, 0 0 8px #aac800;
-  }
 }
