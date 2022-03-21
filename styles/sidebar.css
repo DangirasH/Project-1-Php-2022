@@ -1,9 +1,9 @@
 .sidebar {
   position: sticky;
-  top: 65px;
+  top: var(--nav-height);
   overflow: auto;
   background-color: black;
-  height: 100vh;
+  height: calc(100vh - var(--nav-height));
   width: var(--sidebar-width);
   vertical-align: top;
   border-right: solid 1px var(--primary-opacity);
@@ -30,6 +30,7 @@
   color: var(--primary);
   margin-block-start: 0;
   margin-block-end: var(--spacing2);
+  margin-top: 3rem;
   text-align: center;
   font-family: "Burning Wrath";
 }

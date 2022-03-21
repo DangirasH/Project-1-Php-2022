@@ -16,6 +16,7 @@
   --title-size: clamp(35px, 2.6em, 45px);
 
   --sidebar-width: 260px;
+  --nav-height: 65px;
 
   --spacing: 0.5rem;
   --spacing2: calc(2 * var(--spacing));
