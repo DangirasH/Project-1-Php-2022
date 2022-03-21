@@ -62,7 +62,7 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 630px) {
   nav ul {
     display: none;
   }

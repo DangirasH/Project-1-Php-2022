@@ -4,7 +4,7 @@
   overflow: auto;
   background-color: black;
   height: 100vh;
-  width: 18%;
+  width: var(--sidebar-width);
   vertical-align: top;
   border-right: solid 1px var(--primary-opacity);
 }
@@ -60,34 +60,14 @@ h2.skills {
   width: 25px;
   margin-inline-end: var(--spacing2);
 }
+
 /* Responsive aside */
-@media screen and (max-width: 1400px) {
-  .sidebar {
-    width: 22%;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .sidebar {
-    width: 27%;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 1030px) {
-  .sidebar {
-    width: 30%;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 920px) {
-  .sidebar {
-    width: 38%;
-    height: 100vh;
-  }
-}
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 790px) {
   .sidebar {
     display: none;
+  }
+  main {
+    width: 100%;
   }
 }
 /*End of aside responsive */
