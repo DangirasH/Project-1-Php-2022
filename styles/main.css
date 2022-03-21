@@ -13,7 +13,7 @@
   --title-font: "Burning Wrath";
   --text-font: "Nunito Sans", sans-serif;
   --text-size: 1.3rem;
-  --title-size: clamp(35px, 2.6em, 45px);
+  --title-size: clamp(2rem, -1.5rem + 8vw, 2.6rem);
 
   --sidebar-width: 260px;
   --nav-height: 65px;
@@ -65,11 +65,11 @@ main {
 
 .title-container {
   display: flex;
-  align-items: baseline;
   justify-content: center;
 }
 
 .left-img-title {
+  margin-top: 5.4rem;
   width: 15%;
   height: 35px;
   background-image: url("../img/left_title.png");
@@ -79,6 +79,7 @@ main {
 }
 
 .right-img-title {
+  margin-top: 5.4rem;
   width: 15%;
   height: 35px;
   background-image: url("../img/right_title.png");
