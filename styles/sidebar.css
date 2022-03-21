@@ -1,6 +1,6 @@
 .sidebar {
   position: sticky;
-  top: 0;
+  top: 65px;
   overflow: auto;
   background-color: black;
   height: 100vh;

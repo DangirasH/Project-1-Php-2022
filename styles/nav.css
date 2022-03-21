@@ -9,6 +9,7 @@ nav {
   background-image: url("../img/nav_back.png");
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom: solid 1px var(--primary-opacity);
 }
 
 nav ul {
