@@ -274,12 +274,12 @@ main {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 5px rgb(189, 245, 178), 0 0 10px rgb(189, 245, 178),
-      0 0 20px #aac800, 0 0 25px #aac800, 0 0 30px #aac800, 0 0 35px #aac800,
-      0 0 40px #aac800;
+    text-shadow: 0 0 1px rgb(189, 245, 178), 0 0 2px rgb(189, 245, 178),
+      0 0 3px #aac800, 0 0 4px #aac800, 0 0 5px #aac800, 0 0 6px #aac800,
+      0 0 7px #aac800;
   }
   to {
-    text-shadow: 0 0 10px rgb(189, 245, 178), 0 0 20px #aac800, 0 0 30px #aac800,
-      0 0 35px #aac800, 0 0 40px #aac800, 0 0 45px #aac800, 0 0 50px #aac800;
+    text-shadow: 0 0 2px rgb(189, 245, 178), 0 0 3px #aac800, 0 0 4px #aac800,
+      0 0 5x #aac800, 0 0 6px #aac800, 0 0 7px #aac800, 0 0 8px #aac800;
   }
 }
