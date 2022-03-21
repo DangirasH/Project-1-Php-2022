@@ -27,7 +27,6 @@ nav h2 {
   color: var(--primary);
   font-family: "Burning Wrath";
   margin-left: var(--spacing3);
-  animation: glow 1.3s ease-in-out infinite alternate;
 }
 
 nav ul {
@@ -93,15 +92,17 @@ nav ul li a:hover {
   }
 }
 
+/*
 @keyframes glow {
   from {
-    text-shadow: 0 0 1px rgb(172, 255, 155), 0 0 2px rgb(189, 245, 178),
-      0 0 3px #eefca1, 0 0 4px #eefca1, 0 0 5px #eefca1, 0 0 6px #eefca1,
-      0 0 7px #eefca1;
+    text-shadow: 0 0 0px rgb(172, 255, 155), 0 0 0px rgb(189, 245, 178),
+      0 0 1px #aac800, 0 0 2px #aac800, 0 0 3px #aac800, 0 0 4px #aac800,
+      0 0 5px #aac800;
   }
   to {
-    text-shadow: 0 0 4px rgb(189, 245, 178), 0 0 5px rgb(189, 245, 178),
-      0 0 6px #eefca1, 0 0 7px #eefca1, 0 0 8px #eefca1, 0 0 9px #eefca1,
-      0 0 10px #eefca1;
+    text-shadow: 0 0 0px rgb(172, 255, 155), 0 0 1px rgb(189, 245, 178),
+      0 0 2px #aac800, 0 0 3px #aac800, 0 0 4px #aac800, 0 0 5px #aac800,
+      0 0 6px #aac800;
   }
 }
+*/
