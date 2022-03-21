@@ -69,6 +69,24 @@ main {
   justify-content: center;
 }
 
+.left-img-title {
+  width: 15%;
+  height: 35px;
+  background-image: url("../img/left_title.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.right-img-title {
+  width: 15%;
+  height: 35px;
+  background-image: url("../img/right_title.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
 .home {
   display: flex;
   flex-direction: column;
