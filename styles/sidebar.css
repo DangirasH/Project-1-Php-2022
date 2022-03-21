@@ -4,7 +4,7 @@
   overflow: auto;
   background-color: black;
   height: 100vh;
-  width: var(--sidebar-width);
+  width: 18%;
   vertical-align: top;
   border-right: solid 1px var(--primary-opacity);
 }
