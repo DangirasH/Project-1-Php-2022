@@ -5,7 +5,7 @@
   --primary: #6dc03c;
   --primary-opacity: #52922dab;
   --primary-light: #a2ff6d;
-  --primary-dark: #282c13;
+  --primary-dark: #567251;
   --intermediate: #9e3e11;
   --light: #f1f3e7;
   --dark: #141414;
@@ -203,7 +203,7 @@ main {
 }
 
 .image-arthas {
-  background-image: url("../img/Illidan-arthas");
+  background-image: url("../img/Illidan-arthas.jpg");
   background-size: cover;
   background-position: center;
   height: 30rem;
@@ -270,6 +270,38 @@ main {
   color: var(--light);
   font-family: var(--text-font);
   font-size: var(--text-size);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: var(--nav-height);
+  color: var(--primary-dark);
+  background-image: url("../img/nav_back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: solid 1px var(--primary-opacity);
+}
+
+footer svg {
+  fill: var(--primary);
+  margin-inline: var(--spacing);
+}
+
+footer svg:hover {
+  fill: var(--primary-light);
+}
+
+footer a {
+  color: var(--primary-dark);
+  margin-inline: var(--spacing2);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--light);
 }
 
 @font-face {
