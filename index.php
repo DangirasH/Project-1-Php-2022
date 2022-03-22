@@ -1,3 +1,5 @@
+<?php include 'data.php' ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -86,33 +88,13 @@
           <div class="right-img-title"></div>
         </div>
         <section class="quality-wrapper">
+          <?php foreach($qualities as $title => $qualitie): ?>
           <div>
-            <div class="image-qualite1"></div>
-            <h2>Tactician</h2>
-            <p>
-              From my many experiences, I have acquired and developed a sense of
-              tactic. As a result, I am by far more capable to lead any army!
-            </p>
+            <img src="img/<?= $qualitie['image'] ?>">
+            <h2><?= $title ?></h2>
+            <p><?= $qualitie['text'] ?></p>
           </div>
-          <div>
-            <div class="image-qualite2"></div>
-            <h2>Determined</h2>
-            <p>
-              Through my ascension, my transformation and the hunt for demons,
-              I have proven, more than anyone, that I
-              will do the necessary to achieve my goal.
-            </p>
-          </div>
-          <div>
-            <div class="image-qualite3"></div>
-            <h2>Charismatique</h2>
-            <p>
-              Over the past centuries I have gathered followers
-              (the Illidari). They spread my teachings and follow my
-              example in the hunt for demons, they share my demonic powers
-              and use glaives just like me.
-            </p>
-          </div>
+          <?php endforeach ?>
         </section>
       </section>
       <div class="divider" id="experiences"></div>
