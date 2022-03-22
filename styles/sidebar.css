@@ -17,15 +17,7 @@
   background-position: top;
 }
 
-.sidebar h2 {
-  font-size: 2rem;
-  color: var(--primary);
-  margin-block-start: 0;
-  margin-block-end: var(--spacing2);
-  text-align: center;
-  font-family: "Burning Wrath";
-}
-.sidebar h3 {
+.sidebar h1 {
   font-size: 1.5rem;
   color: var(--primary);
   margin-block-start: 0;
@@ -46,13 +38,10 @@ h2.skills {
   align-items: center;
   width: 100%;
   line-height: 3rem;
-  text-decoration: none;
-
-  font-family: "Trochut";
   font-family: var(--text-font);
 }
 
-.sidebar .icone-contact,
+.icone-contact,
 .sidebar .icone-skill {
   width: 20px;
   margin-inline-end: var(--spacing2);
@@ -62,6 +51,22 @@ h2.skills {
   margin-inline-end: var(--spacing2);
 }
 
+.responsive-top {
+  display: none;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: var(--nav-height);
+  border-bottom: solid 1px var(--primary-opacity);
+  color: var(--primary);
+  font-family: var(--text-font);
+}
+
+.responsive-top img {
+  margin-inline-end: var(--spacing);
+  margin-inline-start: var(--spacing3);
+}
+
 /* Responsive aside */
 @media screen and (max-width: 790px) {
   .sidebar {
@@ -69,6 +74,10 @@ h2.skills {
   }
   main {
     width: 100%;
+  }
+  .responsive-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 /*End of aside responsive */
