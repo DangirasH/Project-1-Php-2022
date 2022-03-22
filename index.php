@@ -89,7 +89,7 @@
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
-          <h1>Qualites</h1>
+          <h1>Qualities</h1>
           <div class="right-img-title"></div>
         </div>
         <section class="quality-wrapper">
