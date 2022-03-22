@@ -163,7 +163,7 @@
         <div class="image-formation"></div>
         <div class="formations">
           <div class="formation-detail">
-            <h2>Archidruid</h2>
+            <h2>Druid</h2>
             <p>
               <b>Teacher</b>: Cenarius (Demi-god, guardian of the grove).
               Learning sage magic.
