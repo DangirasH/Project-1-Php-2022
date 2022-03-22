@@ -65,7 +65,7 @@ nav ul li a:hover {
   gap: 15px;
   position: fixed;
   margin: 0;
-  top: 65px;
+  top: calc(var(--nav-height) - 2px);
   right: 0;
   background-image: url("../img/bg_section.jpg");
   background-repeat: no-repeat;
