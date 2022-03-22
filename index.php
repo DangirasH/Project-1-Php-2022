@@ -16,6 +16,11 @@
 
 <body>
   <header>
+    <aside class="responsive-top">
+      <div><img src="img/phone.png" alt="phone" class="icone-contact" /><span>999-545-523</span></div>
+      <div><img src="img/temple.png" alt="home" class="icone-contact" /><span>Black Temple</span></div>
+      <div><img src="img/mail.png" alt="mail" class="icone-contact" /><span>illidan@gmail.com</span></div>
+    </aside>
     <nav>
       <div class="logo-title">
         <img src="img/logo.png" alt="logo" />
@@ -47,24 +52,26 @@
           <img src="img/phone.png" alt="phone" class="icone-contact" /><span>999-545-523</span>
         </li>
         <li>
-          <img src="img/temple.png" alt="home" class="icone-contact" /><span>Black Temple,</span>
+          <img src="img/temple.png" alt="home" class="icone-contact" /><span>Black Temple</span>
         </li>
         <li>
           <img src="img/mail.png" alt="mail" class="icone-contact" /><span>illidan@gmail.com</span>
         </li>
       </ul>
 
-      <h3 class="skills">Skills</h3>
+      <h1 class="skills">Skills</h1>
       <ul>
         <li>Glaive</li>
         <li>
           <img src="img/glaive.png" alt="glaive" class="icone-skill" /><img src="img/glaive.png" alt="glaive"
-            class="icone-skill" /><img src="img/glaive.png" alt="glaive" class="icone-skill" />
+            class="icone-skill" />
+          <img src="img/glaive.png" alt="glaive" class="icone-skill" />
         </li>
         <li>Flying</li>
         <li>
           <img src="img/wings.png" alt="wings" class="icone-skill" /><img src="img/wings.png" alt="wings"
-            class="icone-skill" /><img src="img/wings.png" alt="wings" class="icone-skill" />
+            class="icone-skill" />
+          <img src="img/wings.png" alt="wings" class="icone-skill" />
         </li>
         <li>Two faces</li>
         <li>
