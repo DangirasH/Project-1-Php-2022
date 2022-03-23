@@ -1,10 +1,6 @@
 <?php include 'data.php' ?>
 <?php
 
-// foreach($_POST as $key => $value) {
-//     $contact[$key] = trim($value);
-// }
-
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -20,12 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     if (empty($contact['lastname'])) {
       $errors[] = 'Lastname is a must';
-  }
+    }
 
-  $firstnameMaxLength = 60;
-  if (strlen($contact['firstname']) > $firstnameMaxLength) {
+    $firstnameMaxLength = 60;
+    if (strlen($contact['firstname']) > $firstnameMaxLength) {
       $errors[] = 'Last Name must have less than ' . $firstnameMaxLength . ' characters';
-  }
+    }
       
     if (empty($contact['email'])) {
         $errors[] = 'Email is mandatory';
@@ -44,16 +40,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = 'A message is needed';
     }
 
-    }
-
     if (empty($errors)) {
-        // traitement de mon form
-        // insert en bdd
-        // envoie de mail...
-
-        header('Location: index.php'); // redirection en GET (vide le POST)
+        header('Location: /index.php'); // redirection en GET (vide le POST)
     }
-
+}
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -275,7 +265,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php endforeach; ?>
             </ul>
             <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Sylvanas Windrunner" required value="<?= $contact['firstname'] ?? '' ?>">
+            <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
 
             <label for="lastname">Last Name</label>
             <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
