@@ -123,10 +123,9 @@ main {
 }
 /* SKILLS */
 .skill-wrapper {
-  --card-size: 50px;
+  --card-size: 145px;
   margin-inline: var(--spacing) var(--spacing);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  
   gap: var(--spacing);
   justify-items: center;
 }
