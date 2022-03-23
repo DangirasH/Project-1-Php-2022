@@ -35,7 +35,8 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--dark);
+  background-color: #171717;
+  background-image: url("../img/black-paper.png");
   line-height: 1.5;
 }
 
@@ -171,9 +172,8 @@ main {
   font-size: var(--text-size);
 }
 .quality-wrapper > div {
-  background-image: url("../img/black-background-stone.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
   margin-bottom: var(--spacing5);
 }
 
@@ -206,20 +206,16 @@ main {
 .experience {
   display: flex;
   margin-block-end: var(--spacing4);
-  background-image: url("../img/black-background-stone.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
 }
 
 .experience-reverse {
   display: flex;
   justify-content: space-between;
   margin-block-end: var(--spacing4);
-  background-image: url("../img/black-background-stone.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
 }
 
 .experience img {
@@ -261,9 +257,8 @@ main {
 .formations {
   width: 80%;
   margin-inline: auto;
-  background-image: url("../img/texturepierre.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
 }
 
 .formation h2 {
