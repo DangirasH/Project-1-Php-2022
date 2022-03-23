@@ -184,9 +184,9 @@
               Learning sage magic.
               </p>
             </div>
-            <img src="img/Cenarius.png" alt="Cenarius">
+            <img src="img/cenariusillidan.jpg" alt="Cenarius">
           </div>
-          <div class="formation-detail">
+          <div class="formation-detail-reverse">
             <div class="detail">
               <h2>Magician</h2>
               <p>

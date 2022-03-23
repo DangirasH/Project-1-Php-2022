@@ -258,6 +258,7 @@ main {
   width: 80%;
   margin-inline: auto auto;
   margin-top: var(--spacing5);
+  margin-bottom: var(--spacing3);
 }
 
 .formations {
@@ -274,6 +275,14 @@ main {
   height: 300px;
 }
 
+.formation-detail-reverse {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: var(--spacing4);
+  height: 300px;
+  flex-direction: row-reverse;
+}
+
 .formation-detail img {
   object-fit: cover;
   display: flex;
@@ -282,7 +291,7 @@ main {
 }
 
 .detail {
-  text-align: start;
+  text-align: center;
   width: 70%;
 }
 
@@ -375,7 +384,12 @@ footer a:hover {
 
 @media screen and (max-width: 550px) {
   .formation-detail {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .formation-detail-reverse {
+    flex-direction: column-reverse;
     height: auto;
   }
 
