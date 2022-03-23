@@ -1,5 +1,50 @@
 <?php include 'data.php' ?>
+<?php
 
+$errors = [];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $contact = array_map('trim', $_POST);
+
+    if (empty($contact['firstname'])) {
+        $errors[] = 'First name is a must';
+    }
+
+    $firstnameMaxLength = 60;
+    if (strlen($contact['firstname']) > $firstnameMaxLength) {
+        $errors[] = 'First name must have less than ' . $firstnameMaxLength . 'characters';
+    }
+    if (empty($contact['lastname'])) {
+      $errors[] = 'Lastname is a must';
+    }
+
+    $firstnameMaxLength = 60;
+    if (strlen($contact['firstname']) > $firstnameMaxLength) {
+      $errors[] = 'Last Name must have less than ' . $firstnameMaxLength . ' characters';
+    }
+      
+    if (empty($contact['email'])) {
+        $errors[] = 'Email is mandatory';
+    }
+
+    $emailMaxLength = 255;
+    if (strlen($contact['email']) > $emailMaxLength) {
+        $errors[] = 'Email must have less than' . $emailMaxLength . ' characters';
+    }
+
+    if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors[] = 'Wrong format for the email' . htmlentities($contact['email']);
+    }
+
+    if (empty($contact['message'])) {
+        $errors[] = 'A message is needed';
+    }
+
+    if (empty($errors)) {
+        header('Location: /index.php'); // redirection en GET (vide le POST)
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -59,7 +104,7 @@
         </li>
       </ul>
 
-      <h1 class="skills">Skills</h1>
+      <h1 class="skills1">Skills</h1>
       <ul>
         <li>Glaive</li>
         <li>
@@ -218,14 +263,26 @@
         </div>
         <div class="container">
           <div class="form-box">
-            <form action="">
-              <input type="text" placeholder="First Name" />
-              <input type="text" placeholder="Last Name" />
-              <input type="email" name="" placeholder="Your Email" />
-              <input type="text" name="" placeholder="Contact Number" />
-              <textarea name="" placeholder="Your Message" id="" cols="30" rows="10"></textarea>
-              <input type="submit" value="Send" />
-            </form>
+            <form action="" method="POST" novalidate>
+            <ul>
+                <?php foreach ($errors as $error) : ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
+            
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
+            <div><button>Envoyer</button></div>
+        </form>
           </div>
         </div>
       </section>
