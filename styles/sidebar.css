@@ -31,6 +31,12 @@ h2.skills {
   margin-block-start: var(--spacing4);
 }
 
+.sidebar ul {
+  width: 220px;
+  padding-inline: 0;
+  margin-inline: auto;
+}
+
 .sidebar ul li {
   color: var(--primary);
   display: flex;

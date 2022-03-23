@@ -153,6 +153,10 @@ main {
   gap: var(--spacing);
 }
 
+.quality-wrapper > div {
+  box-shadow: 0 0 6px var(--primary-dark);
+}
+
 .quality-wrapper img {
   width: 100%;
   height: 20rem;
