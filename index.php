@@ -81,9 +81,9 @@
       <section class="skills">
         <div class="title-container">
           <div class="left-img-title"></div>
-            <h1>Skills</h1>
-            <div class="right-img-title"></div>
-         </div>
+          <h1>Skills</h1>
+          <div class="right-img-title"></div>
+        </div>
         <section class="skill-wrapper">
           <?php foreach ($skills as $title => $skill) : ?>
             <div>
@@ -178,25 +178,25 @@
           <div class="formation-detail">
             <h2>Druid</h2>
             <p>
-              <b>Teacher</b>: Cenarius (Demi-god, guardian of the grove).
+              Cenarius (Demi-god, guardian of the grove).
               Learning sage magic.
             </p>
           </div>
           <div class="formation-detail">
             <h2>Magician</h2>
             <p>
-              <b>Teacher</b>: Rhonin (human, archmage and leader of the Kirin
+              Rhonin (human, archmage and leader of the Kirin
               Tor). Learning arcane magic.
             </p>
           </div>
           <div class="formation-detail">
             <h2>Warlock</h2>
             <p>
-              <b>Teacher</b>: Gul'dan (orc, warlock, necromancer).
+              Gul'dan (orc, warlock, necromancer).
               Absorption of powers from his skull.
             </p>
             <p>
-              <b>Teacher</b>: Sargeras (Black Titan, leader of the legion).
+              Sargeras (Black Titan, leader of the legion).
               Burnt Illidan's eyes and scarred his body through fel flame
               resulting with tattoos that grand demonic powers.
             </p>
