@@ -136,7 +136,19 @@ main {
   object-fit: cover;
 }
 
-.
+.skill-wrapper div h2 {
+  margin-top: 5rem;
+  font-family: var(--title-font);
+  color: var(--primary);
+  text-align: center;
+}
+
+
+.skill-wrapper > div {
+  background-image: url("../img/black-background-stone.png");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: var(--spacing5);
 }
 
 /* End of Skills */
