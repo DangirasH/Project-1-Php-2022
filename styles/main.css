@@ -150,7 +150,14 @@ main {
   background-position: center;
   margin-bottom: var(--spacing5);
 }
-
+@media screen and (min-width: 790px) {
+  .skill-wrapper {
+    display: none;
+  }
+  @media screen and (min-width: 790px) {
+    .skills {
+      display: none;
+    }
 /* End of Skills */
 .quality-wrapper {
   --card-size: 300px;
