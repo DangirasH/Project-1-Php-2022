@@ -131,15 +131,12 @@ main {
   justify-items: center;
 }
 
-
-
 .skill-wrapper div h2 {
   margin-top: 2rem;
   font-family: var(--title-font);
   color: var(--primary);
   text-align: center;
 }
-
 
 .skill-wrapper > div {
   margin-bottom: var(--spacing3);
@@ -298,9 +295,13 @@ footer {
   background-position: top;
 }
 
+footer > div {
+  display: flex;
+}
+
 footer svg {
   fill: var(--primary);
-  margin-inline: var(--spacing);
+  margin-block-start: var(--spacing);
 }
 
 footer svg:hover {
@@ -349,5 +350,20 @@ footer a:hover {
 @media screen and (min-width: 790px) {
   .skills {
     display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer > div {
+    flex-direction: column;
+  }
+  footer > div span {
+    display: none;
+  }
+  footer > div a {
+    margin-inline-end: 0;
+  }
+  footer {
+    height: calc(var(--nav-height) + 10px);
   }
 }
