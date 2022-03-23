@@ -269,6 +269,29 @@ main {
   background-position: center;
 }
 
+.formation-detail {
+  display: flex;
+  margin-block-end: var(--spacing4);
+  background-image: url("../img/black-background-stone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 300px;
+  justify-content: flex-end;
+}
+
+.formation-detail img {
+  object-fit: cover;
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+
+.detail {
+  text-align: start;
+  width: 70%;
+}
+
 .formation h2 {
   padding-top: var(--spacing5);
   margin-top: 0;
@@ -335,6 +358,7 @@ footer a:hover {
     height: 320px;
     width: 100%;
   }
+
 }
 
 @font-face {
@@ -349,5 +373,21 @@ footer a:hover {
 @media screen and (min-width: 790px) {
   .skills {
     display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formation-detail {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .formation-detail img {
+    height: 230px;
+    width: auto;
   }
 }
