@@ -154,7 +154,7 @@ main {
 }
 
 .quality-wrapper > div {
-  box-shadow: 0 0 6px var(--primary-dark);
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .quality-wrapper img {
@@ -212,6 +212,7 @@ main {
   margin-block-end: var(--spacing4);
   background-color: #000000;
   background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .experience-reverse {
@@ -220,6 +221,7 @@ main {
   margin-block-end: var(--spacing4);
   background-color: #000000;
   background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .experience img {
