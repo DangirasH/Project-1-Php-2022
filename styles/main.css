@@ -269,13 +269,9 @@ main {
 
 .formation-detail {
   display: flex;
-  margin-block-end: var(--spacing4);
-  background-image: url("../img/black-background-stone.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 300px;
   justify-content: flex-end;
+  margin-block-end: var(--spacing4);
+  height: 300px;
 }
 
 .formation-detail img {
@@ -360,7 +356,6 @@ footer a:hover {
     height: 320px;
     width: 100%;
   }
-
 }
 
 @font-face {
@@ -377,7 +372,6 @@ footer a:hover {
     display: none;
   }
 }
-
 
 @media screen and (max-width: 550px) {
   .formation-detail {
@@ -409,4 +403,3 @@ footer a:hover {
     height: calc(var(--nav-height) + 10px);
   }
 }
-
