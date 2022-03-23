@@ -147,6 +147,7 @@ main {
 
 /* End of Skills */
 .quality-wrapper {
+  padding-inline: 10%;
   --card-size: 300px;
   margin-inline: var(--spacing) var(--spacing);
   display: grid;
@@ -255,13 +256,13 @@ main {
   background-size: cover;
   background-position: center;
   height: 20rem;
-  width: 60%;
+  width: 80%;
   margin-inline: auto auto;
   margin-top: var(--spacing5);
 }
 
 .formations {
-  width: 60%;
+  width: 80%;
   margin-inline: auto;
   background-image: url("../img/texturepierre.jpg");
   background-size: cover;
@@ -291,10 +292,10 @@ footer {
   width: 100%;
   height: var(--nav-height);
   color: var(--primary-dark);
-  background-image: url("../img/nav_back.png");
+  background-image: url("../img/bg_nav.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: solid 1px var(--primary-opacity);
+  background-position: top;
 }
 
 footer svg {

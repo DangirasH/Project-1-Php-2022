@@ -36,6 +36,7 @@
       <a class="burger" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+
         </svg>
       </a>
     </nav>
@@ -45,7 +46,7 @@
   </header>
   <div class="wrapper">
     <aside class="sidebar">
-      <div></div>
+      <img src="img/sidebar_top.png" alt="illidan">
       <ul>
         <li>
           <img src="img/phone.png" alt="phone" class="icone-contact" /><span>999-545-523</span>
