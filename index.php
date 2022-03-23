@@ -177,30 +177,35 @@
         <div class="image-formation"></div>
         <div class="formations">
           <div class="formation-detail">
-            <h2>Druid</h2>
-            <p>
+            <div class="detail">
+              <h2>Druid</h2>
+              <p>
               Cenarius (Demi-god, guardian of the grove).
               Learning sage magic.
-            </p>
+              </p>
+            </div>
+            <img src="img/Cenarius.png" alt="Cenarius">
           </div>
           <div class="formation-detail">
-            <h2>Magician</h2>
-            <p>
+            <div class="detail">
+              <h2>Magician</h2>
+              <p>
               Rhonin (human, archmage and leader of the Kirin
               Tor). Learning arcane magic.
-            </p>
+              </p>
+            </div>
+            <img src="img/rhonin-illidan.png" alt="rhonin">
           </div>
           <div class="formation-detail">
-            <h2>Warlock</h2>
-            <p>
-              Gul'dan (orc, warlock, necromancer).
-              Absorption of powers from his skull.
-            </p>
-            <p>
+            <div class="detail">
+              <h2>Warlock</h2>
+              <p>
               Sargeras (Black Titan, leader of the legion).
               Burnt Illidan's eyes and scarred his body through fel flame
               resulting with tattoos that grand demonic powers.
-            </p>
+              </p>
+            </div>
+            <img src="img/sargeras.png" alt="Sargeras">
           </div>
         </div>
       </section>
