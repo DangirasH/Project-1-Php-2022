@@ -16,4 +16,16 @@ $qualities = [
                   They spread my teachings and follow my example in the hunt for demons, 
                   they share my demonic powers and use glaives just like me.'
     ]
-];
+]; 
+
+$skills = [
+    'Glaives' => [
+        'image' => 'glaive.jpg',
+    ],    
+    'Flying' => [
+        'image' => 'illidanwings.png',
+    ],
+    'Immolation Aura' => [
+        'image' => 'immolationaura.png',
+    ]
+]; 

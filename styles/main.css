@@ -113,7 +113,39 @@ main {
   text-align: center;
   color: var(--primary);
 }
+.skills h1 {
+  margin-top: 5rem;
+  margin-bottom: var(--spacing4);
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  text-align: center;
+  color: var(--primary);
+}
+/* SKILLS */
+.skill-wrapper {
+  --card-size: 50px;
+  margin-inline: var(--spacing) var(--spacing);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
+  gap: var(--spacing);
+  justify-items: center;
+}
 
+
+
+.skill-wrapper div h2 {
+  margin-top: 2rem;
+  font-family: var(--title-font);
+  color: var(--primary);
+  text-align: center;
+}
+
+
+.skill-wrapper > div {
+  margin-bottom: var(--spacing3);
+}
+
+/* End of Skills */
 .quality-wrapper {
   padding-inline: 10%;
   --card-size: 300px;
@@ -312,4 +344,10 @@ footer a:hover {
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+@media screen and (min-width: 790px) {
+  .skills {
+    display: none;
+  }
 }
