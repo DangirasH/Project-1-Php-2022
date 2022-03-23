@@ -86,6 +86,29 @@
     </aside>
     <main>
       <div class="divider" id="qualities"></div>
+      <section class="skills">
+        <div class="title-container">
+          <div class="left-img-title"></div>
+          <h1>Skills</h1>
+          <div class="right-img-title"></div>
+        </div>
+        <section class="quality-wrapper">
+          <?php foreach($skills as $title => $skill): ?>
+          <div>
+            <img src="img/<?= $skill['image'] ?>" alt="<?= $title ?>">
+            <h2><?= $title ?></h2>
+            <p><?= $skill['text'] ?></p>
+          </div>
+          <?php endforeach ?>
+        </section>
+      </section>
+
+
+
+
+
+
+
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
