@@ -6,15 +6,12 @@
   height: calc(100vh - var(--nav-height));
   width: var(--sidebar-width);
   vertical-align: top;
-  background-image: url("../img/bg_sidebar.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
 }
 
 .sidebar > img {
   height: 13rem;
-  padding-inline-end: var(--spacing);
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -32,6 +29,12 @@
 
 h2.skills {
   margin-block-start: var(--spacing4);
+}
+
+.sidebar ul {
+  width: 220px;
+  padding-inline: 0;
+  margin-inline: auto;
 }
 
 .sidebar ul li {
