@@ -21,17 +21,11 @@ $qualities = [
 $skills = [
     'Glaives' => [
         'image' => 'glaive.jpg',
-        'text' => 'From my many experiences, I have acquired and developed a sense of tactic. 
-                   As a result, I am by far more capable to lead any army!'
-    ],
+    ],    
     'Flying' => [
         'image' => 'illidanwings.png',
-        'text' => 'Through my ascension, my transformation and the hunt for demons, 
-                  I have proven, more than anyone, that I will do the necessary to achieve my goal.'
     ],
     'Immolation Aura' => [
         'image' => 'immolationaura.png',
-        'text' => 'From my many experiences, I have acquired and developed a sense of tactic. 
-                   As a result, I am by far more capable to lead any army!'
     ]
 ]; 

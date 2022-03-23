@@ -87,10 +87,9 @@
         <section class="skill-wrapper">
           <?php foreach ($skills as $title => $skill) : ?>
             <div>
-              <img src="img/<?= $skill['image'] ?>" alt="<?= $title ?>">
               <h2><?= $title ?></h2>
             </div>
-          <?php endforeach ?>
+          <?php endforeach; ?>
         </section>
       </section>
 
