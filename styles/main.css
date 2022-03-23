@@ -147,6 +147,11 @@ main {
   margin-bottom: var(--spacing5);
 }
 
+.experiences {
+  width: 80%;
+  margin-inline: auto;
+}
+
 .experiences h1 {
   margin-top: 5rem;
   font-size: var(--title-size);
@@ -156,79 +161,54 @@ main {
 }
 
 .experiences h2 {
-  margin-top: 5rem;
   font-family: var(--title-font);
+  font-size: calc(var(--title-size) / 1.5);
   color: var(--primary);
   text-align: center;
 }
 
-.experience p {
-  padding-inline: var(--spacing3);
+.experiences p {
   color: var(--light);
   font-size: var(--text-size);
+  padding-inline: var(--spacing3);
 }
 
 .experience {
   display: flex;
-  margin-right: 5rem;
-  margin-left: 5rem;
-}
-
-.image-eternite {
-  background-image: url("../img/Illidan-eternite.jpg");
+  margin-block-end: var(--spacing4);
+  background-image: url("../img/black-background-stone.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 30rem;
-  width: 50%;
-  margin-top: var(--spacing5);
+  background-position: bottom;
 }
 
-.eternite {
-  align-self: center;
-  width: 45%;
-}
-
-.image-tychondrius {
-  background-image: url("../img/Illidan-tychondrius.jpg");
+.experience-reverse {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: var(--spacing4);
+  background-image: url("../img/black-background-stone.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 30rem;
-  width: 50%;
-  margin-top: var(--spacing5);
+  background-position: bottom;
 }
 
-.tychondrius {
-  align-self: center;
-  width: 45%;
+.experience img {
+  object-fit: cover;
+  height: 320px;
+  width: 55%;
 }
 
-.image-arthas {
-  background-image: url("../img/Illidan-arthas.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 30rem;
-  width: 50%;
-  margin-top: var(--spacing5);
+.experience-reverse img {
+  object-fit: cover;
+  height: 320px;
+  width: 55%;
 }
 
-.arthas {
-  align-self: center;
-  width: 45%;
-}
-
-.image-illidari {
-  background-image: url("../img/Illidan-illidari.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 30rem;
-  width: 50%;
-  margin-top: var(--spacing5);
-  margin-bottom: var(--spacing5);
-}
-
-.illidari {
-  align-self: center;
-  width: 45%;
+.experience-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .formation h1 {
@@ -250,7 +230,7 @@ main {
 
 .formations {
   width: 60%;
-  margin-inline: auto auto;
+  margin-inline: auto;
   background-image: url("../img/texturepierre.jpg");
   background-size: cover;
   background-position: center;
@@ -302,6 +282,26 @@ footer a {
 
 footer a:hover {
   color: var(--light);
+}
+
+@media screen and (max-width: 1008px) {
+  .experience {
+    flex-direction: column;
+  }
+  .experience-reverse {
+    flex-direction: column-reverse;
+  }
+  .experience img {
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+  }
+
+  .experience-reverse img {
+    object-fit: cover;
+    height: 320px;
+    width: 100%;
+  }
 }
 
 @font-face {
