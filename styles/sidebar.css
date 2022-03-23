@@ -79,5 +79,11 @@ h2.skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+  .formations {
+    width: 80%;
+  }
+  .image-formation {
+    width: 80%;
+  }
 }
 /*End of aside responsive */

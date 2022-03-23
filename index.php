@@ -123,8 +123,8 @@
           <div class="right-img-title"></div>
         </div>
         <div class="experience">
-          <div class="image-eternite"></div>
-          <div class="eternite">
+          <img src="img/Illidan-eternite.jpg" alt="Well of eternity">
+          <div class="experience-text-container">
             <h2>Well of Eternity</h2>
             <p>
               To save my people, unwillingly i have used the power of Weel of Eternity
@@ -133,8 +133,8 @@
             </p>
           </div>
         </div>
-        <div class="experience">
-          <div class="tychondrius">
+        <div class="experience-reverse">
+          <div class="experience-text-container">
             <h2>Tychondrius</h2>
             <p>
               I have defeated Tychondrius, leader of the Burning Legion,
@@ -142,11 +142,11 @@
               skull of Guldan, it provided me the powers to battle such powerful beings.
             </p>
           </div>
-          <div class="image-tychondrius"></div>
+          <img src="img/Illidan-tychondrius.jpg" alt="Tychondrius">
         </div>
         <div class="experience">
-          <div class="image-arthas"></div>
-          <div class="arthas">
+          <img src="img/Illidan-arthas.jpg" alt="Illidan versus Arthas">
+          <div class="experience-text-container">
             <h2>Arthas</h2>
             <p>
               I fought Arthas leader of the Scourge(The Undead Army) in the Northrend.
@@ -155,15 +155,15 @@
             </p>
           </div>
         </div>
-        <div class="experience">
-          <div class="illidari">
+        <div class="experience-reverse">
+          <div class="experience-text-container">
             <h2>The Illidari</h2>
             <p>
               To this day i continue gathering more and more followers who preach my demonic
               ways to fight demons and rid the Universe of the Legion(Army of Demons)
             </p>
           </div>
-          <div class="image-illidari"></div>
+          <img src="img/Illidan-illidari.jpg" alt="Illidari">
         </div>
       </section>
       <div class="divider" id="formations"></div>
