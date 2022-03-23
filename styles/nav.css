@@ -67,7 +67,7 @@ nav ul li a:hover {
   margin: 0;
   top: calc(var(--nav-height) - 2px);
   right: 0;
-  background-image: url("../img/bg_section.jpg");
+  background-image: url("../img/bg_burger.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   animation: burger 0.2s ease-in;
