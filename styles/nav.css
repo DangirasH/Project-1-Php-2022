@@ -6,10 +6,10 @@ nav {
   right: 0;
   width: 100%;
   height: var(--nav-height);
-  background-image: url("../img/nav_back.png");
+  background-image: url("../img/bg_nav.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: solid 1px var(--primary-opacity);
+  background-position: bottom;
 }
 
 nav div {

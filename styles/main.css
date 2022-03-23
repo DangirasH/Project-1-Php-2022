@@ -260,10 +260,10 @@ footer {
   width: 100%;
   height: var(--nav-height);
   color: var(--primary-dark);
-  background-image: url("../img/nav_back.png");
+  background-image: url("../img/bg_nav.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: solid 1px var(--primary-opacity);
+  background-position: top;
 }
 
 footer svg {
