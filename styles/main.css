@@ -145,6 +145,7 @@ main {
   background-size: cover;
   background-position: center;
   margin-bottom: var(--spacing5);
+  border-image: url("../img/border.png");
 }
 
 .experiences {

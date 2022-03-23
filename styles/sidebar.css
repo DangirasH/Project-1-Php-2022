@@ -6,15 +6,18 @@
   height: calc(100vh - var(--nav-height));
   width: var(--sidebar-width);
   vertical-align: top;
-  border-right: solid 1px var(--primary-opacity);
-}
-
-.sidebar > div {
-  height: 13rem;
   background-image: url("../img/bg_sidebar.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
+  background-size: cover;
+  background-position: top right;
+}
+
+.sidebar > img {
+  height: 13rem;
+  padding-inline-end: var(--spacing);
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .sidebar h1 {
