@@ -71,12 +71,6 @@
             class="icone-skill" />
           <img src="img/wings.png" alt="wings" class="icone-skill" />
         </li>
-        <li>Two faces</li>
-        <li>
-          <img src="img/two-face.png" alt="faces" class="icone-skill" />
-          <img src="img/two-face.png" alt="faces" class="icone-skill" />
-          <img src="img/two-face.png" alt="faces" class="icone-skill" />
-        </li>
         <li>Immolation aura</li>
         <li>
           <img src="img/flame.png" alt="flame" class="icone-skill" /><img src="img/flame.png" alt="flame"
@@ -92,7 +86,11 @@
           <h1>Skills</h1>
           <div class="right-img-title"></div>
         </div>
-        <section class="quality-wrapper">
+
+
+
+
+        <section class="skill-wrapper">
           <?php foreach($skills as $title => $skill): ?>
           <div>
             <img src="img/<?= $skill['image'] ?>" alt="<?= $title ?>">
