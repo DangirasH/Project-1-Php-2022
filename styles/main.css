@@ -35,7 +35,8 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--dark);
+  background-color: #171717;
+  background-image: url("../img/black-paper.png");
   line-height: 1.5;
 }
 
@@ -131,15 +132,12 @@ main {
   justify-items: center;
 }
 
-
-
 .skill-wrapper div h2 {
   margin-top: 2rem;
   font-family: var(--title-font);
   color: var(--primary);
   text-align: center;
 }
-
 
 .skill-wrapper > div {
   margin-bottom: var(--spacing3);
@@ -153,6 +151,10 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
   gap: var(--spacing);
+}
+
+.quality-wrapper > div {
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .quality-wrapper img {
@@ -174,9 +176,8 @@ main {
   font-size: var(--text-size);
 }
 .quality-wrapper > div {
-  background-image: url("../img/black-background-stone.png");
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
   margin-bottom: var(--spacing5);
 }
 
@@ -209,20 +210,18 @@ main {
 .experience {
   display: flex;
   margin-block-end: var(--spacing4);
-  background-image: url("../img/black-background-stone.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .experience-reverse {
   display: flex;
   justify-content: space-between;
   margin-block-end: var(--spacing4);
-  background-image: url("../img/black-background-stone.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .experience img {
@@ -264,9 +263,27 @@ main {
 .formations {
   width: 80%;
   margin-inline: auto;
-  background-image: url("../img/texturepierre.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+}
+
+.formation-detail {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: var(--spacing4);
+  height: 300px;
+}
+
+.formation-detail img {
+  object-fit: cover;
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+
+.detail {
+  text-align: start;
+  width: 70%;
 }
 
 .formation h2 {
@@ -298,9 +315,13 @@ footer {
   background-position: top;
 }
 
+footer > div {
+  display: flex;
+}
+
 footer svg {
   fill: var(--primary);
-  margin-inline: var(--spacing);
+  margin-block-start: var(--spacing);
 }
 
 footer svg:hover {
@@ -349,5 +370,36 @@ footer a:hover {
 @media screen and (min-width: 790px) {
   .skills {
     display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formation-detail {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .detail {
+    width: 100%;
+  }
+
+  .formation-detail img {
+    height: 230px;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer > div {
+    flex-direction: column;
+  }
+  footer > div span {
+    display: none;
+  }
+  footer > div a {
+    margin-inline-end: 0;
+  }
+  footer {
+    height: calc(var(--nav-height) + 10px);
   }
 }
