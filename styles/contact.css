@@ -16,8 +16,11 @@
 }
 
 .container {
-  width: 92%;
+  width: 80%;
   margin: 0 auto;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 .form-box label{
   color: var(--primary);
