@@ -70,6 +70,15 @@ input[type="email"]:hover {
   border: 1px solid var(--primary-opacity);
 }
 
+.form-box form input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 1px solid var(--primary-opacity);
+}
+
+.form-box form textarea:focus {
+  border: 1px solid var(--primary-opacity);
+}
+
 button {
   width: fit-content;
   background-color: var(--primary);
