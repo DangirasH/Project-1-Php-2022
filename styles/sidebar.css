@@ -1,7 +1,6 @@
 .sidebar {
   position: sticky;
   top: var(--nav-height);
-  overflow: auto;
   background-color: black;
   height: calc(100vh - var(--nav-height));
   width: var(--sidebar-width);
