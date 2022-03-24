@@ -89,9 +89,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
+  <div class="divider" id="qualities"></div>
   <div class="wrapper">
     <aside class="sidebar">
-      <img src="img/sidebar_top.png" alt="illidan">
+      <img src="img/portrait.gif" alt="illidan">
       <ul>
         <li>
           <img src="img/phone.png" alt="phone" class="icone-contact" /><span>999-545-523</span>
@@ -123,7 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </ul>
     </aside>
     <main>
-      <div class="divider" id="qualities"></div>
       <section class="skills">
         <div class="title-container">
           <div class="left-img-title"></div>
@@ -137,14 +137,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           <?php endforeach; ?>
         </section>
+        <div class="divider" id="qualities"></div>
       </section>
-
-
-
-
-
-
-
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
@@ -253,6 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </p>
             </div>
             <img src="img/sargeras.png" alt="Sargeras">
+
           </div>
         </div>
       </section>
@@ -265,8 +260,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="container">
           <div class="form-box">
+
             <form action="" method="POST" novalidate>
               <ul>
+
+            <form action="index.php#contacter" method="POST" novalidate>
+            <ul>
                 <?php foreach ($errors as $error) : ?>
                   <li><?= $error ?></li>
                 <?php endforeach; ?>
