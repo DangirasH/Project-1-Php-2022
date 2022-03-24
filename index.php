@@ -213,41 +213,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <h1>Education</h1>
           <div class="right-img-title"></div>
         </div>
-        <div class="image-formation"></div>
-        <div class="formations">
-          <div class="formation-detail">
-            <div class="detail">
-              <h2>Druid</h2>
-              <p>
-                Cenarius (demigod and guardian of the grove):My brother (Malfurion Stormrage) and I studied druidism and its magic under Cenarius, 
-                Since then, I have acquired knowledge and considerable power over everything related to nature.
-              </p>
+        <div class="formation-wrapper">
+          <img src="img/formation_temple_noir.png" alt="black temple">
+          <div class="formations">
+            <div class="formation-detail">
+              <div class="detail">
+                <h2>Druid</h2>
+                <p>
+                  Cenarius (demigod and guardian of the grove):My brother (Malfurion Stormrage) and I studied druidism and its magic under Cenarius, 
+                  Since then, I have acquired knowledge and considerable power over everything related to nature.
+                </p>
+              </div>
+              <img src="img/Cenarius.png" alt="Cenarius">
             </div>
-            <img src="img/Cenarius.png" alt="Cenarius">
-          </div>
-          <div class="formation-detail">
-            <div class="detail">
-              <h2>Magician</h2>
-              <p>
-              Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
-              Rhonin granted me more power through mastery of arcane magic.
-              To this day,my arcane powers grow stronger and stronger.
-              </p>
+            <div class="formation-detail">
+              <div class="detail">
+                <h2>Magician</h2>
+                <p>
+                Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
+                Rhonin granted me more power through mastery of arcane magic.
+                To this day,my arcane powers grow stronger and stronger.
+                </p>
+              </div>
+              <img src="img/rhonin-illidan.png" alt="rhonin">
             </div>
-            <img src="img/rhonin-illidan.png" alt="rhonin">
-          </div>
-          <div class="formation-detail">
-            <div class="detail">
-              <h2>Warlock</h2>
-              <p>
-              Sargeras (Dark Titan, leader of the Burning Legion): 
-              I went to Sargeras for more power, which he granted me. 
-              Indeed, to acquire the powers of the Burning Legion, 
-              Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
-              </p>
+            <div class="formation-detail">
+              <div class="detail">
+                <h2>Warlock</h2>
+                <p>
+                Sargeras (Dark Titan, leader of the Burning Legion): 
+                I went to Sargeras for more power, which he granted me. 
+                Indeed, to acquire the powers of the Burning Legion, 
+                Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
+                </p>
+              </div>
+              <img src="img/sargeras.png" alt="Sargeras">
             </div>
-            <img src="img/sargeras.png" alt="Sargeras">
-
           </div>
         </div>
       </section>
