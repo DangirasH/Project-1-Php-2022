@@ -210,7 +210,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <section class="formation">
         <div class="title-container">
           <div class="left-img-title"></div>
-          <h1>Education</h1>
+            <h1>Education</h1>
           <div class="right-img-title"></div>
         </div>
         <div class="formation-wrapper">
@@ -224,16 +224,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   Since then, I have acquired knowledge and considerable power over everything related to nature.
                 </p>
               </div>
-            <img src="img/cenariusillidan.jpg" alt="Cenarius">
-          </div>
-          <div class="formation-detail-reverse">
-            <div class="detail">
-              <h2>Magician</h2>
-              <p>
-              Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
-              Rhonin granted me more power through mastery of arcane magic.
-              To this day, my arcane powers grow stronger and stronger.
-              </p>
+              <img src="img/cenariusillidan.jpg" alt="Cenarius">
+            </div>
+            <div class="formation-detail-reverse">
+              <div class="detail">
+                <h2>Magician</h2>
+                <p>
+                Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
+                Rhonin granted me more power through mastery of arcane magic.
+                To this day, my arcane powers grow stronger and stronger.
+                </p>
+              </div>
               <img src="img/rhonin-illidan.png" alt="rhonin">
             </div>
             <div class="formation-detail">
