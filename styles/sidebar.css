@@ -61,12 +61,13 @@ h2.skills {
 .responsive-top {
   display: none;
   width: 100%;
-  background-color: black;
   position: fixed;
   top: calc(var(--nav-height) - 1px);
-  border-bottom: solid 1px var(--primary-opacity);
   color: var(--primary);
   font-family: var(--text-font);
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+  border-bottom: solid 1px black;
 }
 
 .responsive-top img {
