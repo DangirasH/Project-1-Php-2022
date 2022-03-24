@@ -231,7 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <p>
               Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
               Rhonin granted me more power through mastery of arcane magic.
-              To this day,my arcane powers grow stronger and stronger.
+              To this day, my arcane powers grow stronger and stronger.
               </p>
             </div>
             <img src="img/rhonin-illidan.png" alt="rhonin">
