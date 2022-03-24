@@ -126,7 +126,7 @@ main {
 .skill-wrapper {
   --card-size: 145px;
   margin-inline: var(--spacing) var(--spacing);
-  
+
   gap: var(--spacing);
   justify-items: center;
 }
@@ -145,8 +145,8 @@ main {
 /* End of Skills */
 .quality-wrapper {
   padding-inline: 10%;
-  --card-size: 300px;
-  margin-inline: var(--spacing) var(--spacing);
+  --card-size: 290px;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--card-size), 1fr));
   gap: var(--spacing);
@@ -249,22 +249,18 @@ main {
   font-size: var(--title-size);
 }
 
-.image-formation {
-  background-image: url("../img/formation_temple_noir.png");
-  background-size: cover;
-  background-position: center;
-  height: 20rem;
-  width: 80%;
-  margin-inline: auto auto;
-  margin-top: var(--spacing5);
-  margin-bottom: var(--spacing3);
-}
-
-.formations {
+.formation-wrapper {
   width: 80%;
   margin-inline: auto;
   background-color: #000000;
   background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
+}
+
+.formation-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
 }
 
 .formation-detail {

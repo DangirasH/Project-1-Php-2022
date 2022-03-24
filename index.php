@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contact = array_map('trim', $_POST);
 
   if (empty($contact['firstname'])) {
-    $errors[] = 'First name is a must';
+    $errors[] = 'First name is mandatory';
   }
 
   $firstnameMaxLength = 60;
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors[] = 'First name must have less than ' . $firstnameMaxLength . 'characters';
   }
   if (empty($contact['lastname'])) {
-    $errors[] = 'Lastname is a must';
+    $errors[] = 'Lastname is mandatory';
   }
 
   $firstnameMaxLength = 60;
@@ -213,16 +213,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <h1>Education</h1>
           <div class="right-img-title"></div>
         </div>
-        <div class="image-formation"></div>
-        <div class="formations">
-          <div class="formation-detail">
-            <div class="detail">
-              <h2>Druid</h2>
-              <p>
-                Cenarius (demigod and guardian of the grove):My brother (Malfurion Stormrage) and I studied druidism and its magic under Cenarius, 
-                Since then, I have acquired knowledge and considerable power over everything related to nature.
-              </p>
-            </div>
+        <div class="formation-wrapper">
+          <img src="img/formation_temple_noir.png" alt="black temple">
+          <div class="formations">
+            <div class="formation-detail">
+              <div class="detail">
+                <h2>Druid</h2>
+                <p>
+                  Cenarius (demigod and guardian of the grove):My brother (Malfurion Stormrage) and I studied druidism and its magic under Cenarius, 
+                  Since then, I have acquired knowledge and considerable power over everything related to nature.
+                </p>
+              </div>
             <img src="img/cenariusillidan.jpg" alt="Cenarius">
           </div>
           <div class="formation-detail-reverse">
@@ -233,21 +234,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               Rhonin granted me more power through mastery of arcane magic.
               To this day, my arcane powers grow stronger and stronger.
               </p>
+              <img src="img/rhonin-illidan.png" alt="rhonin">
             </div>
-            <img src="img/rhonin-illidan.png" alt="rhonin">
-          </div>
-          <div class="formation-detail">
-            <div class="detail">
-              <h2>Warlock</h2>
-              <p>
-              Sargeras (Dark Titan, leader of the Burning Legion): 
-              I went to Sargeras for more power, which he granted me. 
-              Indeed, to acquire the powers of the Burning Legion, 
-              Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
-              </p>
+            <div class="formation-detail">
+              <div class="detail">
+                <h2>Warlock</h2>
+                <p>
+                Sargeras (Dark Titan, leader of the Burning Legion): 
+                I went to Sargeras for more power, which he granted me. 
+                Indeed, to acquire the powers of the Burning Legion, 
+                Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
+                </p>
+              </div>
+              <img src="img/sargeras.png" alt="Sargeras">
             </div>
-            <img src="img/sargeras.png" alt="Sargeras">
-
           </div>
         </div>
       </section>
@@ -260,26 +260,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="container">
           <div class="form-box">
-
-            <form action="" method="POST" novalidate>
+            <form action="index.php#contacter" method="POST">
               <ul>
-
-            <form action="index.php#contacter" method="POST" novalidate>
-            <ul>
                 <?php foreach ($errors as $error) : ?>
                   <li><?= $error ?></li>
                 <?php endforeach; ?>
               </ul>
               <label for="firstname">First Name</label>
               <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
-
               <label for="lastname">Last Name</label>
               <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
-
               <label for="email">Email</label>
               <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
-
-
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
               <div><button>Envoyer</button></div>
@@ -314,5 +306,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>
