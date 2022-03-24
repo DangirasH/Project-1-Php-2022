@@ -4,45 +4,45 @@
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $contact = array_map('trim', $_POST);
+  $contact = array_map('trim', $_POST);
 
-    if (empty($contact['firstname'])) {
-        $errors[] = 'First name is a must';
-    }
+  if (empty($contact['firstname'])) {
+    $errors[] = 'First name is a must';
+  }
 
-    $firstnameMaxLength = 60;
-    if (strlen($contact['firstname']) > $firstnameMaxLength) {
-        $errors[] = 'First name must have less than ' . $firstnameMaxLength . 'characters';
-    }
-    if (empty($contact['lastname'])) {
-      $errors[] = 'Lastname is a must';
-    }
+  $firstnameMaxLength = 60;
+  if (strlen($contact['firstname']) > $firstnameMaxLength) {
+    $errors[] = 'First name must have less than ' . $firstnameMaxLength . 'characters';
+  }
+  if (empty($contact['lastname'])) {
+    $errors[] = 'Lastname is a must';
+  }
 
-    $firstnameMaxLength = 60;
-    if (strlen($contact['firstname']) > $firstnameMaxLength) {
-      $errors[] = 'Last Name must have less than ' . $firstnameMaxLength . ' characters';
-    }
-      
-    if (empty($contact['email'])) {
-        $errors[] = 'Email is mandatory';
-    }
+  $firstnameMaxLength = 60;
+  if (strlen($contact['firstname']) > $firstnameMaxLength) {
+    $errors[] = 'Last Name must have less than ' . $firstnameMaxLength . ' characters';
+  }
 
-    $emailMaxLength = 255;
-    if (strlen($contact['email']) > $emailMaxLength) {
-        $errors[] = 'Email must have less than' . $emailMaxLength . ' characters';
-    }
+  if (empty($contact['email'])) {
+    $errors[] = 'Email is mandatory';
+  }
 
-    if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Wrong format for the email' . htmlentities($contact['email']);
-    }
+  $emailMaxLength = 255;
+  if (strlen($contact['email']) > $emailMaxLength) {
+    $errors[] = 'Email must have less than' . $emailMaxLength . ' characters';
+  }
 
-    if (empty($contact['message'])) {
-        $errors[] = 'A message is needed';
-    }
+  if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
+    $errors[] = 'Wrong format for the email' . htmlentities($contact['email']);
+  }
 
-    if (empty($errors)) {
-        header('Location: /index.php'); // redirection en GET (vide le POST)
-    }
+  if (empty($contact['message'])) {
+    $errors[] = 'A message is needed';
+  }
+
+  if (empty($errors)) {
+    header('Location: /index.php'); // redirection en GET (vide le POST)
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -225,8 +225,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="detail">
               <h2>Druid</h2>
               <p>
-              Cenarius (Demi-god, guardian of the grove).
-              Learning sage magic.
+                Cenarius (demigod and guardian of the grove):My brother (Malfurion Stormrage) and I studied druidism and its magic under Cenarius, 
+                Since then, I have acquired knowledge and considerable power over everything related to nature.
               </p>
             </div>
             <img src="img/Cenarius.png" alt="Cenarius">
@@ -235,8 +235,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="detail">
               <h2>Magician</h2>
               <p>
-              Rhonin (human, archmage and leader of the Kirin
-              Tor). Learning arcane magic.
+              Rhonin (Archmage and Leader of the Kirin Tor): While defending Zin-Azshari,
+              Rhonin granted me more power through mastery of arcane magic.
+              To this day,my arcane powers grow stronger and stronger.
               </p>
             </div>
             <img src="img/rhonin-illidan.png" alt="rhonin">
@@ -245,9 +246,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="detail">
               <h2>Warlock</h2>
               <p>
-              Sargeras (Black Titan, leader of the legion).
-              Burnt Illidan's eyes and scarred his body through fel flame
-              resulting with tattoos that grand demonic powers.
+              Sargeras (Dark Titan, leader of the Burning Legion): 
+              I went to Sargeras for more power, which he granted me. 
+              Indeed, to acquire the powers of the Burning Legion, 
+              Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
               </p>
             </div>
             <img src="img/sargeras.png" alt="Sargeras">
@@ -264,25 +266,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="container">
           <div class="form-box">
             <form action="" method="POST" novalidate>
-            <ul>
+              <ul>
                 <?php foreach ($errors as $error) : ?>
-                    <li><?= $error ?></li>
+                  <li><?= $error ?></li>
                 <?php endforeach; ?>
-            </ul>
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
+              </ul>
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
 
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
-            
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
 
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
-            <div><button>Envoyer</button></div>
-        </form>
+
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
+              <div><button>Envoyer</button></div>
+            </form>
           </div>
         </div>
       </section>
