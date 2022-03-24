@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $contact = array_map('trim', $_POST);
 
   if (empty($contact['firstname'])) {
-    $errors[] = 'First name is a must';
+    $errors[] = 'First name is mandatory';
   }
 
   $firstnameMaxLength = 60;
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $errors[] = 'First name must have less than ' . $firstnameMaxLength . 'characters';
   }
   if (empty($contact['lastname'])) {
-    $errors[] = 'Lastname is a must';
+    $errors[] = 'Lastname is mandatory';
   }
 
   $firstnameMaxLength = 60;
@@ -261,11 +261,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="container">
           <div class="form-box">
-
-            <form action="" method="POST" novalidate>
-              <ul>
-
-            <form action="index.php#contacter" method="POST" novalidate>
+            <form action="index.php#contacter" method="POST">
             <ul>
                 <?php foreach ($errors as $error) : ?>
                   <li><?= $error ?></li>
