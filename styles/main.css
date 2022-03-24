@@ -267,7 +267,15 @@ main {
   display: flex;
   justify-content: flex-end;
   margin-block-end: var(--spacing4);
-  height: 300px;
+  height: 400px;
+}
+
+.formation-detail-reverse {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: var(--spacing4);
+  height: 400px;
+  flex-direction: row-reverse;
 }
 
 .formation-detail img {
@@ -277,8 +285,15 @@ main {
   height: 100%;
 }
 
+.formation-detail-reverse img {
+  object-fit: cover;
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+
 .detail {
-  text-align: start;
+  text-align: center;
   width: 70%;
 }
 
@@ -369,9 +384,14 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 900px) {
   .formation-detail {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .formation-detail-reverse {
+    flex-direction: column-reverse;
     height: auto;
   }
 
@@ -382,6 +402,13 @@ footer a:hover {
   .formation-detail img {
     height: 230px;
     width: auto;
+    object-position: top;
+  }
+
+  .formation-detail-reverse img {
+    height: 230px;
+    width: auto;
+    object-position: top;    
   }
 }
 
