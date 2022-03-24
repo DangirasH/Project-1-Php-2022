@@ -262,21 +262,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="container">
           <div class="form-box">
             <form action="index.php#contacter" method="POST">
-            <ul>
+              <ul>
                 <?php foreach ($errors as $error) : ?>
                   <li><?= $error ?></li>
                 <?php endforeach; ?>
               </ul>
               <label for="firstname">First Name</label>
               <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
-
               <label for="lastname">Last Name</label>
               <input type="text" id="lastname" name="lastname" placeholder="Windrunner" required value="<?= $contact['lastname'] ?? '' ?>">
-
               <label for="email">Email</label>
               <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
-
-
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
               <div><button>Envoyer</button></div>
@@ -311,5 +307,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   </div>
   <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -62,14 +62,16 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  height: 20rem;
+  gap: var(--spacing3);
   position: fixed;
   margin: 0;
-  top: calc(var(--nav-height) - 2px);
+  top: var(--nav-height);
   right: 0;
   background-image: url("../img/bg_burger.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: 3.5px solid black;
   animation: burger 0.2s ease-in;
 }
 
