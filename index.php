@@ -252,7 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="container">
           <div class="form-box">
-            <form action="" method="POST" novalidate>
+            <form action="index.php#contacter" method="POST" novalidate>
             <ul>
                 <?php foreach ($errors as $error) : ?>
                     <li><?= $error ?></li>
