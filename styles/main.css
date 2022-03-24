@@ -252,9 +252,6 @@ main {
 .formation-wrapper {
   width: 80%;
   margin-inline: auto;
-  background-color: #000000;
-  background-image: url("../img/black-paper.png");
-  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .formation-wrapper img {
@@ -266,35 +263,23 @@ main {
 .formation-detail {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column-reverse;
   margin-block-end: var(--spacing4);
-  height: 400px;
-}
-
-.formation-detail-reverse {
-  display: flex;
-  justify-content: flex-end;
-  margin-block-end: var(--spacing4);
-  height: 400px;
-  flex-direction: row-reverse;
+  background-color: #000000;
+  background-image: url("../img/black-paper.png");
+  box-shadow: 0 0 15px var(--primary-dark);
 }
 
 .formation-detail img {
   object-fit: cover;
-  display: flex;
-  width: 30%;
-  height: 100%;
-}
-
-.formation-detail-reverse img {
-  object-fit: cover;
-  display: flex;
-  width: 30%;
-  height: 100%;
+  object-position: top;
+  width: 100%;
+  height: 20rem;
 }
 
 .detail {
   text-align: center;
-  width: 70%;
+  width: 100%;
 }
 
 .formation h2 {
@@ -381,34 +366,6 @@ footer a:hover {
 @media screen and (min-width: 790px) {
   .skills {
     display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .formation-detail {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
-  .formation-detail-reverse {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
-  .detail {
-    width: 100%;
-  }
-
-  .formation-detail img {
-    height: 230px;
-    width: auto;
-    object-position: top;
-  }
-
-  .formation-detail-reverse img {
-    height: 230px;
-    width: auto;
-    object-position: top;    
   }
 }
 

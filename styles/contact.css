@@ -94,7 +94,13 @@ button:active {
   filter: brightness(80%);
 }
 
-form ul li {
+form p {
+  text-align: center;
+  font-size: calc(var(--title-size) / 1.6);
+}
+
+form p,
+ul li {
   color: var(--primary);
 }
 
@@ -105,7 +111,7 @@ form ul li {
   }
 }
 @media (max-width: 460px) {
-  .container {
+  .form-box {
     width: 95%;
   }
 }

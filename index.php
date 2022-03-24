@@ -1,6 +1,6 @@
-<?php include 'data.php' ?>
-<?php
+<?php 
 
+include 'data.php';
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   if (!filter_var($contact['email'], FILTER_VALIDATE_EMAIL)) {
-    $errors[] = 'Wrong format for the email' . htmlentities($contact['email']);
+    $errors[] = 'Wrong format for the email ' . htmlentities($contact['email']);
   }
 
   if (empty($contact['message'])) {
@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   if (empty($errors)) {
-    header('Location: /index.php'); // redirection en GET (vide le POST)
+    header('Location: /index.php?send=true');
   }
 }
 ?>
@@ -214,8 +214,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <div class="right-img-title"></div>
         </div>
         <div class="formation-wrapper">
-          <img src="img/formation_temple_noir.png" alt="black temple">
-          <div class="formations">
             <div class="formation-detail">
               <div class="detail">
                 <h2>Druid</h2>
@@ -224,9 +222,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   Since then, I have acquired knowledge and considerable power over everything related to nature.
                 </p>
               </div>
-              <img src="img/cenariusillidan.jpg" alt="Cenarius">
+              <img src="img/cenarius_experiences.png" alt="Cenarius">
             </div>
-            <div class="formation-detail-reverse">
+            <div class="formation-detail">
               <div class="detail">
                 <h2>Magician</h2>
                 <p>
@@ -235,7 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 To this day, my arcane powers grow stronger and stronger.
                 </p>
               </div>
-              <img src="img/rhonin-illidan.png" alt="rhonin">
+              <img src="img/rhonin_experiences.jpg" alt="Rhonin">
             </div>
             <div class="formation-detail">
               <div class="detail">
@@ -247,9 +245,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Sargeras burned my eyes and covered my body with tattoos which gave me a lot of demonic power.
                 </p>
               </div>
-              <img src="img/sargeras.png" alt="Sargeras">
+              <img src="img/sargeras_experiences.png" alt="Sargeras">
             </div>
-          </div>
         </div>
       </section>
       <div class="divider" id="contacter"></div>
@@ -261,11 +258,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="container">
           <div class="form-box">
-            <form action="index.php#contacter" method="POST">
+            <form action="index.php#contacter" method="POST" novalidate>
               <ul>
-                <?php foreach ($errors as $error) : ?>
+                <?php 
+                if (!empty($_GET['send'])) { ?>
+                  <p>Your message has been sucessfully sent</p>
+                <?php 
+                } else {
+                foreach ($errors as $error) : ?>
                   <li><?= $error ?></li>
-                <?php endforeach; ?>
+                <?php endforeach; 
+                } ?>
               </ul>
               <label for="firstname">First Name</label>
               <input type="text" id="firstname" name="firstname" placeholder="Sylvanas" required value="<?= $contact['firstname'] ?? '' ?>">
