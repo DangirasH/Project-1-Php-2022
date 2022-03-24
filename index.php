@@ -44,9 +44,10 @@
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
+  <div class="divider" id="qualities"></div>
   <div class="wrapper">
     <aside class="sidebar">
-      <img src="img/sidebar_top.png" alt="illidan">
+      <img src="img/portrait.gif" alt="illidan">
       <ul>
         <li>
           <img src="img/phone.png" alt="phone" class="icone-contact" /><span>999-545-523</span>
@@ -78,7 +79,6 @@
       </ul>
     </aside>
     <main>
-      <div class="divider" id="qualities"></div>
       <section class="skills">
         <div class="title-container">
           <div class="left-img-title"></div>
@@ -92,14 +92,8 @@
             </div>
           <?php endforeach; ?>
         </section>
+        <div class="divider" id="qualities"></div>
       </section>
-
-
-
-
-
-
-
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
@@ -177,35 +171,30 @@
         <div class="image-formation"></div>
         <div class="formations">
           <div class="formation-detail">
-            <div class="detail">
-              <h2>Druid</h2>
-              <p>
+            <h2>Druid</h2>
+            <p>
               Cenarius (Demi-god, guardian of the grove).
               Learning sage magic.
-              </p>
-            </div>
-            <img src="img/Cenarius.png" alt="Cenarius">
+            </p>
           </div>
           <div class="formation-detail">
-            <div class="detail">
-              <h2>Magician</h2>
-              <p>
+            <h2>Magician</h2>
+            <p>
               Rhonin (human, archmage and leader of the Kirin
               Tor). Learning arcane magic.
-              </p>
-            </div>
-            <img src="img/rhonin-illidan.png" alt="rhonin">
+            </p>
           </div>
           <div class="formation-detail">
-            <div class="detail">
-              <h2>Warlock</h2>
-              <p>
+            <h2>Warlock</h2>
+            <p>
+              Gul'dan (orc, warlock, necromancer).
+              Absorption of powers from his skull.
+            </p>
+            <p>
               Sargeras (Black Titan, leader of the legion).
               Burnt Illidan's eyes and scarred his body through fel flame
               resulting with tattoos that grand demonic powers.
-              </p>
-            </div>
-            <img src="img/sargeras.png" alt="Sargeras">
+            </p>
           </div>
         </div>
       </section>

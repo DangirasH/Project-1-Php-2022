@@ -8,6 +8,7 @@
   vertical-align: top;
   background-color: #000000;
   background-image: url("../img/black-paper.png");
+  border-right: 1px solid black;
 }
 
 .sidebar > img {
