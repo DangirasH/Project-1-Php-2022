@@ -89,7 +89,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
+<<<<<<< HEAD
   <div class="divider" id="qualities"></div>
+=======
+  <div class="divider"></div>
+>>>>>>> parent of e06ebaa... fix bug on qualitie
   <div class="wrapper">
     <aside class="sidebar">
       <img src="img/portrait.gif" alt="illidan">
