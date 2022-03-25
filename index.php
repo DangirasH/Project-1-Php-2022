@@ -89,7 +89,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
-  <div class="divider"></div>
   <div class="wrapper">
     <aside class="sidebar">
       <img src="img/portrait.gif" alt="illidan">
@@ -137,8 +136,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           <?php endforeach; ?>
         </section>
-        <div class="divider" id="qualities"></div>
       </section>
+      <div class="divider" id="qualities"></div>
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
