@@ -278,7 +278,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
-              <div><button>Envoyer</button></div>
+              <div><button>Send</button></div>
             </form>
           </div>
         </div>

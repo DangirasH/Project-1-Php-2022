@@ -94,6 +94,7 @@ button {
   color: black;
   font-size: 1.3rem;
   margin: auto;
+  width: 40%;
   border: 1px solid var(--dark);
 }
 
