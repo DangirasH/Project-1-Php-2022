@@ -62,8 +62,8 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 20rem;
-  gap: var(--spacing3);
+  height: 50vh;
+  gap: var(--spacing5);
   position: fixed;
   margin: 0;
   top: var(--nav-height);
