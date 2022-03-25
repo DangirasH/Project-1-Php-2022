@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
-  <div class="divider"></div>
+  <div class="divider" id="qualities"></div>
   <div class="wrapper">
     <aside class="sidebar">
       <img src="img/portrait.gif" alt="illidan">
