@@ -89,11 +89,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <h1>You are not prepared for my CV !</h1>
     </section>
   </header>
-<<<<<<< HEAD
-  <div class="divider" id="qualities"></div>
-=======
-  <div class="divider"></div>
->>>>>>> parent of e06ebaa... fix bug on qualitie
   <div class="wrapper">
     <aside class="sidebar">
       <img src="img/portrait.gif" alt="illidan">
@@ -141,8 +136,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
           <?php endforeach; ?>
         </section>
-        <div class="divider" id="qualities"></div>
       </section>
+      <div class="divider" id="qualities"></div>
       <section class="qualites">
         <div class="title-container">
           <div class="left-img-title"></div>
@@ -282,7 +277,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               <input type="email" id="email" name="email" value="<?= $contact['email']  ?? '' ?>" placeholder="sylvwindrunner@wow.com" required>
               <label for="message">Message</label>
               <textarea name="message" id="message" cols="30" rows="10" required><?= $contact['message'] ?? '' ?></textarea>
-              <div><button>Envoyer</button></div>
+              <div><button>Send</button></div>
             </form>
           </div>
         </div>
